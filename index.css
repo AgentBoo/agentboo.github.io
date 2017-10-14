@@ -2,19 +2,15 @@ body{
   color: #12073a;
   font-family: 'Source Sans Pro', Courier, sans-serif;
   font-size: 1.1em;
-  line-height: 1.375em;
+  line-height: 0.9em;
   /*font-family: 'Roboto Condensed', sans-serif;*/
   /*font-family: 'Lato', sans-serif;*/
   /*font-family: 'Source Sans Pro', sans-serif;*/
-  background: #97dbd1;
+  /*background: #97dbd1;*/
   border: 0;
   margin: 0;
   overflow: hidden;
   padding: 0;
-}
-
-i > p {
-  font-family: 'Source Sans Pro', Courier, sans-serif
 }
 
 /* NOTE: Encompassing */
@@ -27,8 +23,13 @@ i > p {
   margin: 2vh 4vw;
 }
 
+.s-hide{
+  display: none;
+}
+
 hr{
-  border: solid 0.5px #97dbd1;
+  border: solid 0.5px white;
+  margin: 3.3vh auto;
 }
 
 i{
@@ -38,13 +39,6 @@ i{
 a{
   color: #09023a;
   text-decoration: none;
-}
-
-.arrow-flow > i {
-  font-size: 13px;
-  position: relative;
-    right: -24vw;
-  margin: 0 0.4vw;
 }
 
 /* NOTE: Navigation */
@@ -67,7 +61,7 @@ ul > li{
 }
 
 li > a:hover{
-  color: #f2eded;
+  color: #97dbd1;
   transition: 0.3s;
 }
 
@@ -82,24 +76,16 @@ li > a:hover{
 #bottom-section{
   width: 500px;
   padding: 25px;
-  /*margin: -1vh 75px 0 auto;*/
 }
 
-.art{
-  margin: 18.1vh auto 100vh;
+.c-art{
+  margin: 13.6vh auto 70vh;
   padding: 1vh 2vw;
 }
 
-.art-intro{
+.c-sub-art{
   background-color: rgba(226, 226, 226, 0.4);
   border-radius: 4px;
-  padding: 1vh 2vw;
-}
-
-.sub-art{
-  background-color: rgba(226, 226, 226, 0.4);
-  border-radius: 4px;
-  margin: 24.5vh auto 0;
   padding: 1vh 2vw;
 }
 
@@ -107,8 +93,18 @@ li > a:hover{
   font-size: 0.80em;
 }
 
-.art-aboutme{
-  padding-bottom: 2vh;
+.c-art_botMargin{
+  padding-top: 21.4vh;
+}
+
+#intro-art{
+  background-color: rgba(226, 226, 226, 0.4);
+  border-radius: 4px;
+  padding: 1vh 2vw;
+}
+
+#aboutme-art{
+  padding-bottom: 1vh;
 }
 
 .aboutme-icons{
@@ -118,14 +114,29 @@ li > a:hover{
     align-items: center;
 }
 
-.aboutme-icons > i, .aboutme-icons > a {
-  margin: 1vw;
-  padding: 1.1vh 1vw;
+.aboutme-icons > i{
+  border: solid transparent;
+  color: #97dbd1;
+  cursor: pointer;
+  margin: 1.4vh 1.4vw;
+  padding: 1.4vh 1.3vw;
+}
+
+.aboutme-icons > a > i{
+  color: #97dbd1;
+  margin: 1.4vh 1.4vw;
+  padding: 1.4vh 1.3vw;
   border-radius: 50%;
 }
 
-.art-skills{
-  width: 680px;
+.aboutme-icons > i:hover{
+  border-bottom: solid white;
+  transition: 0.4s;
+}
+
+.aboutme-icons > a >i:hover{
+  background-color: white;
+  transition: 0.4s;
 }
 
 .skills{
@@ -136,9 +147,9 @@ li > a:hover{
 }
 
 .skills-logo{
-  margin: 2vh 2vw;
-  max-height: 8vh;
-  max-width: 10vw;
+  margin: 20px;
+  max-height: 40px;
+  max-width: 40px;
 }
 
 /* NOTE: Footer */
@@ -155,21 +166,16 @@ li > a:hover{
 }
 
 footer > p {
+  color: #7f7c7b;
   margin-right: 2.4vw;
 }
 
 footer > p:hover {
-  color: #f2eded;
-  transition: 0.3s;
+  color: #12073a;
+  transition: 0.6s;
 }
 
 /* NOTE: Animated email */
-.css-envelope{
-  cursor: pointer;
-  padding: 20px auto;
-  margin: 20px auto;
-}
-
 .css-email{
   background-color: transparent;
   cursor: pointer;
@@ -177,7 +183,7 @@ footer > p:hover {
 
 .css-email:after{
   content: "hanova.dung@gmail.com";
-  color: white;
+  color: #7f7c7b;
   font-family: 'Source Sans Pro', Courier, sans-serif;
   font-size: 16px;
   padding-left: 1.4vmin;
@@ -188,10 +194,8 @@ footer > p:hover {
 }
 
 #myname{
-  margin: 0 auto;
-  position: fixed;
-    top: 13.2vh;
-  width: 18vw;
+  margin: 7.2vh auto 1vh;
+  width: 20vw;
 }
 
 @media screen and (max-width: 480px) {
@@ -199,23 +203,56 @@ footer > p:hover {
       overflow: scroll;
     }
 
+    .c-nav > ul > li:not(:first-child){
+      display: none;
+    }
+
     .c-nav{
+      background-color: #97dbd1;
+      position: fixed;
+        top: 0;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .c-nav.responsive{
       position: relative;
+    }
+    .c-nav.responsive > li > a{
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .s-hide{
+      float: left;
+      display: block;
+    }
+
+    #bottom-section{
+      border-bottom: solid rgba(226, 226, 226, 0.9) 1.2px;
+      margin-top: 0;
+    }
+
+    .c-art{
+      margin: 2vh auto;
+      padding: 1vh 2vw;
     }
 
     .c-footer{
-      background-color: grey;
       display: flex;
         flex-flow: column nowrap;
         align-items: center;
       position: relative;
+      width: 100%;
+      margin: 0;
+      padding-top: 1vh;
+      padding-bottom: 3vh;
     }
 
-    .art{
-      margin: 1.1vh auto;
+    .c-footer > p{
+      color: #97dbd1;
+      margin: 1.4vh 1vw;
     }
 
-    .sub-art{
-      margin: 0 auto;
-    }
 }
