@@ -1,0 +1,154 @@
+body{
+  color: #12073a;
+  font-family: 'Source Sans Pro', Courier, sans-serif;
+  font-size: 1.1em;
+  line-height: 1.375em;
+  /*font-family: 'Roboto Condensed', sans-serif;*/
+  /*font-family: 'Lato', sans-serif;*/
+  /*font-family: 'Source Sans Pro', sans-serif;*/
+  background: #97dbd1;
+  border: 0;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+i > p {
+  font-family: 'Source Sans Pro', Courier, sans-serif
+}
+
+/* NOTE: Encompassing */
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.container{
+  margin: 2vh 4vw;
+}
+
+/* NOTE: Navigation */
+.c-nav{
+  position: fixed;
+    right: 0;
+    top: 2vh;
+  width: 100%;
+}
+
+ul{
+  display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+  list-style: none;
+}
+
+ul > li{
+  margin: 0 1vw;
+}
+
+li > a{
+  color: #09023a;
+  text-decoration: none;
+}
+
+li > a:hover{
+  color: #f2eded;
+  transition: 0.3s;
+}
+
+
+/* NOTE: Main */
+.c-main{
+  display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+#bottom-section{
+  width: 500px;
+  padding: 25px;
+  /*margin: -1vh 75px 0 auto;*/
+}
+
+.art{
+  margin: 22.1vh auto 100vh;
+  padding: 1vh 2vw;
+}
+
+#art-intro{
+  background-color: rgba(226, 226, 226, 0.4);
+  border-radius: 4px;
+  padding: 1vh 2vw;
+}
+
+.sub-art{
+  background-color: rgba(226, 226, 226, 0.4);
+  border-radius: 4px;
+  margin: 28.5vh auto 0;
+  padding: 1vh 2vw;
+}
+
+.aboutme-icons{
+  display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+
+.aboutme-icons > i, .aboutme-icons > a {
+  margin: 1vw;
+}
+
+.skills{
+  display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.skills-logo{
+  margin: 2vh 2vw;
+  max-height: 8vh;
+  max-width: 10vw;
+}
+
+/* NOTE: Footer */
+.c-footer{
+  display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+
+  position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  width: 100%;
+}
+
+footer > p {
+  margin-right: 2.4vw;
+}
+
+footer > p:hover {
+  color: #f2eded;
+  transition: 0.3s;
+}
+
+/* NOTE: Animated email */
+.css-email{
+  cursor: pointer;
+}
+
+.css-email:after{
+  content: "hanova.dung@gmail.com"
+}
+
+.active{
+  border-bottom: groove #f2eded 1px;
+}
+
+#myname{
+  margin: 0 auto;
+  position: fixed;
+    top: 13.2vh;
+  width: 18vw;
+}
