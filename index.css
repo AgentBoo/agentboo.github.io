@@ -27,6 +27,26 @@ i > p {
   margin: 2vh 4vw;
 }
 
+hr{
+  border: solid 0.5px #97dbd1;
+}
+
+i{
+  color: #12073a;
+}
+
+a{
+  color: #09023a;
+  text-decoration: none;
+}
+
+.arrow-flow > i {
+  font-size: 13px;
+  position: relative;
+    right: -24vw;
+  margin: 0 0.4vw;
+}
+
 /* NOTE: Navigation */
 .c-nav{
   position: fixed;
@@ -44,11 +64,6 @@ ul{
 
 ul > li{
   margin: 0 1vw;
-}
-
-li > a{
-  color: #09023a;
-  text-decoration: none;
 }
 
 li > a:hover{
@@ -71,11 +86,11 @@ li > a:hover{
 }
 
 .art{
-  margin: 22.1vh auto 100vh;
+  margin: 18.1vh auto 100vh;
   padding: 1vh 2vw;
 }
 
-#art-intro{
+.art-intro{
   background-color: rgba(226, 226, 226, 0.4);
   border-radius: 4px;
   padding: 1vh 2vw;
@@ -84,18 +99,33 @@ li > a:hover{
 .sub-art{
   background-color: rgba(226, 226, 226, 0.4);
   border-radius: 4px;
-  margin: 28.5vh auto 0;
+  margin: 24.5vh auto 0;
   padding: 1vh 2vw;
+}
+
+.sub-text{
+  font-size: 0.80em;
+}
+
+.art-aboutme{
+  padding-bottom: 2vh;
 }
 
 .aboutme-icons{
   display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .aboutme-icons > i, .aboutme-icons > a {
   margin: 1vw;
+  padding: 1.1vh 1vw;
+  border-radius: 50%;
+}
+
+.art-skills{
+  width: 680px;
 }
 
 .skills{
@@ -134,12 +164,23 @@ footer > p:hover {
 }
 
 /* NOTE: Animated email */
+.css-envelope{
+  cursor: pointer;
+  padding: 20px auto;
+  margin: 20px auto;
+}
+
 .css-email{
+  background-color: transparent;
   cursor: pointer;
 }
 
 .css-email:after{
-  content: "hanova.dung@gmail.com"
+  content: "hanova.dung@gmail.com";
+  color: white;
+  font-family: 'Source Sans Pro', Courier, sans-serif;
+  font-size: 16px;
+  padding-left: 1.4vmin;
 }
 
 .active{
@@ -151,4 +192,30 @@ footer > p:hover {
   position: fixed;
     top: 13.2vh;
   width: 18vw;
+}
+
+@media screen and (max-width: 480px) {
+    body {
+      overflow: scroll;
+    }
+
+    .c-nav{
+      position: relative;
+    }
+
+    .c-footer{
+      background-color: grey;
+      display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+      position: relative;
+    }
+
+    .art{
+      margin: 1.1vh auto;
+    }
+
+    .sub-art{
+      margin: 0 auto;
+    }
 }
