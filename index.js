@@ -1,3 +1,4 @@
+// NOTE: Animated envelope with email address
 const envelope = document.getElementById("js-envelope");
 
 envelope.addEventListener("click", function(ev){
@@ -8,7 +9,7 @@ envelope.addEventListener("click", function(ev){
 	}
 })
 
-
+// NOTE: Pretending I am serving multiple pages and making the nav bar 'reflect that'
 const navLi = document.querySelectorAll(".navigation li");
 
 navLi.forEach(function(li){
@@ -18,4 +19,17 @@ navLi.forEach(function(li){
     });
     this.classList.add("active");
   });
+})
+
+// NOTE: Responsive menu bar
+const nav = document.getElementById('menu-nav');
+const bars = document.getElementById('menu-bars');
+
+bars.addEventListener('click', function(ev){
+	if (nav.className === "ul-nav"){
+		nav.classList.remove('ul-nav')
+		nav.classList.add('bars-nav');
+	} else {
+		nav.className = 'ul-nav'
+	}
 })

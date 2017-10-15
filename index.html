@@ -12,9 +12,9 @@
   <body>
     <!-- Navigation -->
     <nav class="c-nav container" role="navigation">
-      <ul>
+      <ul id="menu-nav" class="ul-nav">
         <!-- Menu icon -->
-        <li class="s-hide"><i class="fa fa-bars" aria-hidden="true"></i></li>
+        <li id="menu-bars" class="s-hide"><i class="fa fa-bars" aria-hidden="true"></i></li>
         <!-- Links point to specific articles on the same page -->
         <li><a href="#"> home </a></li>
         <li><a href="#aboutme"> about me </a></li>
@@ -29,7 +29,7 @@
       <!-- Main top-section on mobile viewport-->
       <section id="top-section" class="s-hide container">
         <header>
-          <h1 id="myname"> Zuzka Han </h1>
+          <h1 id="myname"><p> Zuzka</p><p>Han</p></h1>
         </header>
       </section>
 
@@ -76,18 +76,35 @@
             <!-- <i class="fa fa-terminal" aria-hidden="true"></i> -->
             <p> these are the skills I have learned. </p>
             <div class="skills">
-              <img class="skills-logo" src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML5">
-              <img class="skills-logo" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS3">
-              <img class="skills-logo" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt="Javascript">
-              <img class="skills-logo" src="./svg/bootstrap-solid.svg" alt="Ruby">
-              <img class="skills-logo" src="https://upload.wikimedia.org/wikipedia/commons/7/73/Ruby_logo.svg" alt="Ruby">
-              <img class="skills-logo" src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="Node.js">
-              <img class="skills-logo" src="https://upload.wikimedia.org/wikipedia/en/4/45/MongoDB-Logo.svg" alt="MongoDB">
-              <img class="skills-logo" src="https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg" alt="PostgreSQL">
-              <img class="skills-logo" src="https://upload.wikimedia.org/wikipedia/commons/6/62/Ruby_On_Rails_Logo.svg" alt="Ruby on Rails">
-              <img class="skills-logo" src="https://assets.geneious.com/manual/11.0/geneious_logo.png" alt="Geneious">
-              <img class="skills-logo" src="https://images.nvidia.com/content/tesla/gromacs/gromacs-logo.png" alt="GROMACS">
-              <img class="skills-logo" src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Pymol_logo.png" alt="PyMOL">
+              <div class="skills-subclass">
+                <div id="frontend">
+                  <img class="skills-logo html" src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML5">
+                  <img class="skills-logo css" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS3">
+                  <img class="skills-logo js" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt="Javascript">
+                  <img class="skills-logo boots" src="./svg/bootstrap-solid.svg" alt="Bootstrap">
+                </div>
+                <p class="skills_notes sub-text"> front-end </p>
+              </div>
+
+              <div class="skills-subclass">
+                <div id="fullstack">
+                  <!-- <img class="skills-logo rb" src="https://upload.wikimedia.org/wikipedia/commons/7/73/Ruby_logo.svg" alt="Ruby"> -->
+                  <img class="skills-logo nodejs" src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="Node.js">
+                  <img class="skills-logo mongodb" src="https://upload.wikimedia.org/wikipedia/en/4/45/MongoDB-Logo.svg" alt="MongoDB">
+                  <img class="skills-logo psql" src="https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg" alt="PostgreSQL">
+                  <img class="skills-logo rails" src="https://upload.wikimedia.org/wikipedia/commons/6/62/Ruby_On_Rails_Logo.svg" alt="Ruby on Rails">
+                </div>
+                <p class="skills_notes sub-text"> full-stack </p>
+              </div>
+
+              <div class="skills-subclass">
+                <div id="bioinf">
+                  <img class="skills-logo geneious" src="https://assets.geneious.com/manual/11.0/geneious_logo.png" alt="Geneious">
+                  <img class="skills-logo gromacs" src="https://images.nvidia.com/content/tesla/gromacs/gromacs-logo.png" alt="GROMACS">
+                  <img class="skills-logo pymol" src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Pymol_logo.png" alt="PyMOL">
+                </div>
+                <p id="bioinf_p" class="skills_notes sub-text"> bioinformatics </p>
+              </div>
             </div>
           </div>
         </article>
@@ -96,7 +113,8 @@
           <i class="fa fa-terminal" aria-hidden="true"></i>
           <!-- content -->
           <div class="c-sub-art">
-            <!-- <i class="fa fa-terminal" aria-hidden="true"></i> -->
+            <p> portfolio </p>
+            <p class="sub-text"> under construction </p>
           </div>
         </article>
       </section>
