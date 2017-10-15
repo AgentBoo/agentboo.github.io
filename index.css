@@ -323,7 +323,8 @@ footer > p:hover {
     display: flex;
     flex-flow: column nowrap;
     align-items: flex-start;
-    margin-bottom: 3vh;
+    margin-bottom: 10vh;
+    padding-bottom: 10vh;
   }
 
   .c-footer > p{
