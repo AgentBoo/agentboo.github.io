@@ -53,8 +53,9 @@ ul{
   background-color: white;
   position: fixed;
     right: 0;
-    top: 2vh;
+    top: 0;
   width: 100%;
+  padding: 2vh 4vw;
 }
 
 .ul-nav{
@@ -317,14 +318,16 @@ footer > p:hover {
 
 @media screen and (max-width: 736px){
   .c-footer{
+    position: relative;
     display: flex;
     flex-flow: column nowrap;
     align-items: flex-start;
+    margin-bottom: 3vh;
   }
 
   .c-footer > p{
     color: #97dbd1;
-    margin: 1vh 1vw;
+    margin: 1vh 1.3vw;
   }
 }
 
