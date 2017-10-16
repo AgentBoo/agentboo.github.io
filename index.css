@@ -1,4 +1,5 @@
 body{
+  box-sizing: border-box;
   color: #12073a;
   font-family: 'Source Sans Pro', Courier, sans-serif;
   font-size: 1.1em;
@@ -8,7 +9,7 @@ body{
   /*font-family: 'Source Sans Pro', sans-serif;*/
   border: 0;
   margin: 0;
-  /*overflow: hidden;*/
+  overflow: hidden;
   padding: 0;
 }
 
@@ -19,10 +20,11 @@ body{
 }
 
 .container{
-  margin: 2vh 4vw;
+  box-sizing: border-box;
+  margin: 0 2.1vw;
 }
 
-.s-hide{
+.s-for_mobile{
   display: none;
 }
 
@@ -45,18 +47,18 @@ ul{
 }
 
 .sub-text{
-  font-size: 0.80em;
+  font-size: 0.8em;
 }
 
 /* NOTE: Navigation */
 .c-nav{
   background-color: white;
-  opacity: 0.94;
+  opacity: 0.85;
+  padding: 2vh 4vw;
   position: fixed;
     right: 0;
     top: 0;
   width: 100%;
-  padding: 2vh 4vw;
 }
 
 .ul-nav{
@@ -77,60 +79,69 @@ li > a:hover{
 
 /* NOTE: Main */
 .c-main{
+  box-sizing: border-box;
   display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
 }
 
+/*top-section*/
+#myname{
+  margin: 25.7vh auto 2vh;
+  width: 20vw;
+}
+
+#myname > p{
+  margin: 9px 0;
+}
+
+/*bottom-section*/
 #bottom-section{
-  padding: 25px;
-  width: 500px;
+  padding: 0 1vw 4.41vh;
 }
 
 .c-art{
-  margin: 13.6vh auto 70vh;
+  /*border: solid orange;*/
+  margin: 0 auto 2.2vh;
+  padding-top: 100px;
 }
 
 .c-sub-art{
   background-color: rgba(226, 226, 226, 0.4);
   border-radius: 4px;
-  padding: 1vh 2vw;
+  max-width: 425px;
+  padding: 6px;
 }
 
-.c-art_botMargin{
-  padding-top: 21.4vh;
+#intro, #aboutme, #skills, #portfolio{
+  margin-bottom: 110vh;
 }
 
-#intro-art{
-  background-color: rgba(226, 226, 226, 0.4);
-  border-radius: 4px;
-  padding: 1vh 2vw;
-}
-
-#aboutme-art{
+/*about me*/
+.aboutme-art{
   padding-bottom: 1vh;
 }
 
 .aboutme-icons{
   display: flex;
+    align-items: center;
     flex-flow: row nowrap;
     justify-content: flex-end;
-    align-items: center;
 }
 
 .aboutme-icons > i{
   border: solid transparent;
   color: #97dbd1;
   cursor: pointer;
-  margin: 1.4vh 1.4vw;
-  padding: 1.4vh 1.3vw;
+  margin: 5px;
+  padding: 10px;
 }
 
 .aboutme-icons > a > i{
   border-radius: 50%;
   color: #97dbd1;
-  margin: 1.4vh 1.4vw;
-  padding: 1.4vh 1.3vw;
+  margin: 5px;
+  padding: 10px 12px;
 }
 
 .aboutme-icons > i:hover{
@@ -138,29 +149,54 @@ li > a:hover{
   transition: 0.4s;
 }
 
-.aboutme-icons > a >i:hover{
+.aboutme-icons > a > i:hover{
   background-color: white;
   transition: 0.4s;
 }
 
-#skills-art{
-  width: 716px;
+a > strong:hover{
+  color: #97dbd1;
+  transition: 0.4s;
 }
 
-.skills{
+/*skills*/
+.c-skills{
+  box-sizing: border-box;
   display: flex;
+    align-items: center;
     flex-flow: row nowrap;
     justify-content: space-between;
+  padding: 0 1vw;
 }
 
-.skills-subclass{
-  margin: 5vh auto;
-  padding-top: 40px;
-  padding-bottom: 40px;
+#skills-sub {
+  max-width: 100%;
 }
 
-.skills_notes{
-  margin-bottom: 0px;
+.c-skills:hover .c-skills_cat {
+    opacity: .25;
+}
+.c-skills .c-skills_cat:hover {
+    opacity: 1;
+}
+
+.c-skills_cat{
+  /*border: solid pink;*/
+  padding-top: 21px;
+  margin-bottom: 2.6%;
+}
+
+.c-skills_logos{
+  /*border: solid red;*/
+  box-sizing: border-box;
+}
+
+.c-skills_logos > img{
+  /*border: solid black;*/
+}
+
+.skills-notes{
+  font-style: italic;
   text-align: center;
 }
 
@@ -171,14 +207,12 @@ li > a:hover{
 }
 
 #frontend{
-  flex: 1;
   display: grid;
     align-content: center;
-    justify-content: center;
-    grid-template-columns: repeat(2, 60px);
-    grid-template-rows: repeat(2, 60px);
+    grid-template-columns: repeat(2, 56px);
+    grid-template-rows: repeat(2, 56px);
     grid-gap: 5px;
-  padding-left: 7px;
+    justify-content: center;
 }
 
 .html{
@@ -187,10 +221,9 @@ li > a:hover{
 }
 
 .css{
-  justify-self: center;
   grid-column: 2;
   grid-row: 1;
-  padding-right: 10px;
+  padding: 0 7.8px;
 }
 
 .js{
@@ -204,50 +237,51 @@ li > a:hover{
 }
 
 #fullstack{
-  flex: 1;
   display: grid;
     align-content: center;
+    grid-template-columns: repeat(15, 5px);
+    grid-template-rows: repeat(3, 27px);
+    grid-gap: 7px;
     justify-content: center;
-    grid-template-columns: repeat(15, 9px);
-    grid-template-rows: repeat(5, 18px);
-    grid-gap: 3px;
-  padding-right: 10px;
+  padding: 18px 7vw 3px 6vw;
 }
 
 .nodejs, .mongodb, .rails{
-  max-width: 68px;
-}
-
-.nodejs{
-  grid-column: 1/5;
-  grid-row: 3;
-}
-
-.mongodb{
-  grid-column: 6/7;
-  grid-row: 5;
-  position: relative;
-    bottom: 2px;
+  max-width: 155%;
 }
 
 .psql{
   grid-column: 6/7;
   grid-row: 1;
-  padding-left: 6px;
+  position: relative;
+    bottom: 7px;
+    left: 5px;
+}
+
+.nodejs{
+  grid-column: 1/5;
+  grid-row: 2;
+}
+
+.mongodb{
+  grid-column: 6/7;
+  grid-row: 3;
+  max-width: 86px;
+  position: relative;
+    right: 12px;
 }
 
 .rails{
   grid-column: 11/15;
-  grid-row: 3;
+  grid-row: 2;
 }
 
 #bioinf{
-  flex: 1;
   display: flex;
-    flex-flow: column nowrap;
     align-items: center;
+    flex-flow: column nowrap;
     justify-content: center;
-  padding-right: 3px;
+  padding-bottom: 11.7px;
 }
 
 .geneious, .gromacs, .pymol{
@@ -264,31 +298,33 @@ li > a:hover{
 }
 
 .pymol{
-  max-height: 26px;
+  max-height: 23px;
 }
+
 
 /* NOTE: Footer */
 .c-footer{
   display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
-
+  opacity: 0.85;
   position: fixed;
     bottom: 0;
-    left: 0;
-    right: 0;
+    left: 3.1vw;
   width: 100%;
 }
 
 footer > p {
   color: #7f7c7b;
-  margin-right: 2.4vw;
+  font-size: 16px;
+  margin: 0 3vw 3vh 0;
 }
 
 footer > p:hover {
   color: #12073a;
-  transition: 0.6s;
+  transition: linear 1s;
 }
+
 
 /* NOTE: Animated email */
 .css-email{
@@ -305,120 +341,132 @@ footer > p:hover {
 }
 
 .active{
-  border-bottom: groove #f2eded 1px;
+  border-bottom: solid #97dbd1 1px;
+  padding-bottom: 3px;
 }
 
-#myname{
-  margin: 18vh auto 1vh;
-  width: 20vw;
-}
+/* NOTE: TABLET */
+@media screen and (max-width: 768px){
+  body{
+    overflow: scroll;
+  }
 
-#myname > p{
-  margin: 9px 0;
-}
+  .active{
+    border-bottom: transparent;
+  }
 
-@media screen and (max-width: 736px){
+  #portfolio{
+    margin-bottom: 13vh;
+  }
+
   .c-footer{
-    position: relative;
     display: flex;
-    flex-flow: column nowrap;
-    align-items: flex-start;
-    margin-bottom: 4vh;
-    padding-bottom: 10vh;
+      align-items: flex-start;
+      flex-flow: column nowrap;
+      margin-bottom: 11vh;
+    position: static;
   }
 
   .c-footer > p{
     color: #97dbd1;
-    margin: 1.3vh 1.3vw;
+    margin: 10px;
   }
+
 }
 
-
-@media screen and (max-width: 414px) {
+/* NOTE: MOBILE */
+@media screen and (max-width: 425px) {
     body {
       overflow: scroll;
     }
 
+    #intro, #aboutme, #skills, #portfolio{
+      margin-bottom: 0;
+    }
+
+/*navigation*/
     .c-nav{
-      background-color: rgba(151, 219, 209, 0.94);
-      position: fixed;
-        top: 0;
+      background-color: rgba(151, 219, 209, 0.85);
       margin: 0;
       padding: 0;
+      position: fixed;
+        top: 0;
       width: 100%;
     }
 
     .ul-nav li:not(:first-child){
       display: none;
     }
-
-    .bars-nav:not(:first-child){
-      display: flex;
-        align-items: flex-start;
-        flex-flow: column nowrap;
-      position: relative;
-    }
-
-    .bars-nav > li{
-      transition: opacity linear 1s;
-    }
-
-    .s-hide{
+/*top-section*/
+    .s-for_mobile{
       display: block;
       float: right;
     }
 
+/*bottom-section*/
     #bottom-section{
-      border-bottom: solid rgba(226, 226, 226, 0.94) 1.2px;
-      margin: 0 auto 1.4vh;
-      padding: 0 1vw;
+      border-bottom: solid rgba(226, 226, 226, 0.85) 1.2px;
+      padding: 1vh 1vw 4.41vh;
     }
 
     .c-art{
-      margin: 2vh auto;
-      padding: 1vh 1vw;
+      padding: 0;
+      margin: 2.2vh auto;
     }
 
-    #skills-art{
-      width: 95%;
+/*about me*/
+    .css-email:after{
+    font-size: 11px;
+    }
+
+/*skills*/
+    #skills-sub{
       border: dotted rgba(151, 219, 209, 0.2);
+      padding: 0 2.6vw;
     }
 
-    .skills{
-      box-sizing: border-box;
+    .c-skills{
       display: flex;
-        flex-flow: column nowrap;
         align-items: center;
+        flex-flow: column nowrap;
         justify-content: center;
-      padding-bottom: 6vh;
+      margin: 8.5vh auto 1.5vh;
+      padding: 0;
     }
 
-
-    .skills-subclass{
-      margin-bottom: 0;
-      padding-bottom: 0;
+    .c-skills_cat{
       border-top: solid white 0.6px;
-      box-sizing: border-box;
+      padding-top: 50px;
       width: 100%;
     }
-    .skills-subclass > p{
-      padding-top: 5vh;
+
+    .c-skills_cat > p{
+      margin: 40px auto;
       color: grey;
     }
 
+    .pymol{
+      max-height: 4.4vh;
+    }
+
+/*portfolio*/
+  #portfolio{
+    margin-bottom: 1vh;
+  }
+
+/*footer*/
     .c-footer{
       display: flex;
         align-items: center;
         flex-flow: column nowrap;
-      margin: 0 0 4vh;
-      padding-bottom: 3vh;
+      margin: 3.41vh 0 7vh;
       position: relative;
       width: 100%;
     }
 
     .c-footer > p{
       color: #97dbd1;
-      margin: 1.4vh 1vw;
+      margin: 7.7px;
     }
 
 }

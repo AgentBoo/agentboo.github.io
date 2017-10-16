@@ -10,7 +10,7 @@ envelope.addEventListener("click", function(ev){
 })
 
 // NOTE: Pretending I am serving multiple pages and making the nav bar 'reflect that'
-const navLi = document.querySelectorAll(".navigation li");
+const navLi = document.querySelectorAll("#menu-nav li a");
 
 navLi.forEach(function(li){
 	li.addEventListener("click", function(ev){
