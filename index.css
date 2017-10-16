@@ -159,6 +159,10 @@ li > a:hover{
   transition: 0.4s;
 }
 
+a > strong{
+  color: #aebfbc;
+}
+
 a > strong:hover{
   color: #97dbd1;
   transition: 0.4s;
@@ -171,7 +175,7 @@ a > strong:hover{
     align-items: center;
     flex-flow: row nowrap;
     justify-content: space-between;
-  padding: 0 1vw;
+  padding: 0 6.7vw 0 6.6vw;
 }
 
 #skills-sub {
