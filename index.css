@@ -29,6 +29,8 @@ p{
 .ribbon{
   background: black;
   padding: 3.6vh 1vw;
+  position: fixed;
+  width: 100%;
 }
 
 .wrap{
@@ -40,6 +42,10 @@ p{
 }
 
 /* NOTE: Navigation specific */
+.rib-head{
+  top: 0;
+}
+
 .flex-nav{
   align-items: center;
   flex-flow: row wrap;
@@ -62,6 +68,7 @@ p{
 /* Top section*/
 .wrap-topsection{
   height: 42vh;
+  margin-top: 7.2vh;
 }
 
 #ZH-intro{
@@ -90,20 +97,18 @@ p{
 /* Left */
 #left-subsection{
   border-right: solid black 1px;
-  height: 60vh;
+  height: 400px;
 }
 
 /* Right */
 #right-subsection{
   border-left: solid black 1px;
-  height: 60vh;
+  height: 400px;
 }
 
 /* NOTE: Footer specific */
 .rib-foot{
-  position: fixed;
-    bottom: 0;
-  width: 100%;
+  bottom: 0;
 }
 
 .flex-foot{
