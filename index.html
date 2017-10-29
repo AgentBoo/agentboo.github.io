@@ -12,16 +12,20 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
   </head>
+
   <body>
+    <!-- Navigation -->
     <header>
       <nav class="ribbon">
-        <div class="wrap flex nav-flex" id="navigation">
-          <div class="nav-links">
+        <div class="wrap flex flex-nav" id="navigation">
+          <!-- Logo - home -->
+          <div class="links-nav">
             <a class="link" href="https://agentboo.github.io/"> ZH </a>
           </div>
-          <div class="nav-links trig-down">
+          <!-- The rest of the navlinks -->
+          <div class="links-nav trig-down">
             <a class="link" href="https://agentboo.github.io/"> home </a>
-            <a class="link" href="#">about me</a>
+            <a class="link" href="#">about</a>
             <a class="link" href="#">skills</a>
             <a class="link" href="#">portfolio</a>
             <!-- Resume link is a downloadable pdf that opens in a new window -->
@@ -30,40 +34,71 @@
         </div>
       </nav>
     </header>
+
+    <!-- About me, Skills, Portfolio -->
     <main>
-      <div class="jumbotron topsection-wrap topsection-parallax">
-        <section>
+      <!-- Top section -->
+      <section class="jumbotron wrap-topsection wrap-topsection_parallax">
+        <article>
           <p class="" id="ZH-intro">
             Hi, I am Zuzka. I am a web developer and biochemist.<br>
             The picture behind me has been borrowed from
             http://pymol.sourceforge.net/pmimag/800/virus3600.jpg<br>
             and is a temporary placeholder.
           </p>
-        </section>
-      </div>
-      <div class="jumbotron flex bottomsection-flex bottomsection-wrap">
-        <section id="left-subsection">
-          <h1> About </h1>
-          <article>
-            <p> about.me </p>
-          </article>
-          <article>
-            <p> contact.me </p>
-            <p> skills </p>
-          </article>
-        </section>
+        </article>
+      </section>
 
-        <section id="right-subsection">
-          <h1> Portfolio </h1>
-          <article>
-            <p> portfolio </p>
-          </article>
-        </section>
-      </div>
+      <!-- Bottom section -->
+      <section class="jumbotron flex flex-bottomsection wrap-bottomsection">
+        <!-- Left subsection -->
+        <div class="wrap-subsection" id="left-subsection">
+          <div class="">
+            <!-- About me -->
+            <article>
+              <h1> about.me </h1>
+              <div>
+                <p></p>
+              </div>
+              <div>
+                <strong>contact.me</strong>
+                <a href="#"> email </a>
+                <a href="#"> linkedin </a>
+                <a href="#"> github </a>
+              </div>
+            </article>
+
+            <!-- Skills -->
+            <article>
+              <h1> skills </h1>
+              <div>
+                <p> front-end </p>
+                <p> back-end </p>
+                <p> bioinformatics </p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Right subsection -->
+        <div class="wrap-subsection" id="right-subsection">
+          <div class="">
+            <h1> Portfolio.under.construction </h1>
+            <article>
+              <p> BrewDo </p>
+              <p> Honeybadgers </p>
+              <p> notreddit </p>
+              <p> Hangman </p>
+              <p> Bent Creek Pottery </p>
+            </article>
+          </div>
+        </div>
+      </section>
     </main>
+
     <!-- Footer is fixed on desktops, not fixed on mobile-->
-    <footer class="ribbon foot-rib">
-      <div class="wrap flex foot-flex foot-paragraphs">
+    <footer class="ribbon rib-foot">
+      <div class="wrap flex flex-foot paragraphs-foot">
         <p class="link"> West Lafayette and Indianapolis, IN </p>
         <p class="link"> hanova.dung@gmail.com </p>
       </div>

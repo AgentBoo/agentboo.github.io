@@ -40,13 +40,13 @@ p{
 }
 
 /* NOTE: Navigation specific */
-.nav-flex{
+.flex-nav{
   align-items: center;
   flex-flow: row wrap;
   justify-content: space-between;
 }
 
-.nav-links > a{
+.links-nav > a{
   padding: 0 10px 3.6vh;
 }
 
@@ -55,8 +55,13 @@ p{
 }
 
 /* NOTE: Main specific */
-.topsection-wrap{
-  height: 40vh;
+.wrap-subsection{
+  width: 50%;
+}
+
+/* Top section*/
+.wrap-topsection{
+  height: 42vh;
 }
 
 #ZH-intro{
@@ -67,7 +72,7 @@ p{
   width: 47%;
 }
 
-.topsection-parallax{
+.wrap-topsection_parallax{
   background-attachment: fixed;
   background-image: url("http://pymol.sourceforge.net/pmimag/800/virus3600.jpg");
   background-position: left;
@@ -75,7 +80,8 @@ p{
   background-size: cover;
 }
 
-.bottomsection-flex{
+/* Bottom section */
+.flex-bottomsection{
   align-items: flex-start;
   flex-flow: row nowrap;
   justify-content: center;
@@ -84,26 +90,28 @@ p{
 /* Left */
 #left-subsection{
   border-right: solid black 1px;
+  height: 60vh;
 }
 
 /* Right */
 #right-subsection{
   border-left: solid black 1px;
+  height: 60vh;
 }
 
 /* NOTE: Footer specific */
-.foot-rib{
+.rib-foot{
   position: fixed;
     bottom: 0;
   width: 100%;
 }
 
-.foot-flex{
+.flex-foot{
   align-items: center;
   flex-flow: row wrap;
   justify-content: flex-start;
 }
 
-.foot-paragraphs > p{
+.paragraphs-foot > p{
   padding: 0 10px;
 }
