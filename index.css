@@ -22,6 +22,10 @@ p{
 }
 
 /* NOTE: Encompassing classes */
+.test-c{
+  border: solid red;
+}
+
 .ribbon{
   background: black;
   padding: 3.6vh 1vw;
@@ -36,13 +40,13 @@ p{
 }
 
 /* NOTE: Navigation specific */
-.flex-nav{
+.nav-flex{
   align-items: center;
   flex-flow: row wrap;
   justify-content: space-between;
 }
 
-.links-nav > a{
+.nav-links > a{
   padding: 0 10px 3.6vh;
 }
 
@@ -50,19 +54,56 @@ p{
   border-bottom: solid white;
 }
 
+/* NOTE: Main specific */
+.topsection-wrap{
+  height: 40vh;
+}
+
+#ZH-intro{
+  background: rgba(255,255,255,0.5);
+  color: white;
+  position: relative;
+    top: 10vh;
+  width: 47%;
+}
+
+.topsection-parallax{
+  background-attachment: fixed;
+  background-image: url("http://pymol.sourceforge.net/pmimag/800/virus3600.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bottomsection-flex{
+  align-items: flex-start;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+/* Left */
+#left-subsection{
+  border-right: solid black 1px;
+}
+
+/* Right */
+#right-subsection{
+  border-left: solid black 1px;
+}
+
 /* NOTE: Footer specific */
-.rib-foot{
+.foot-rib{
   position: fixed;
     bottom: 0;
   width: 100%;
 }
 
-.flex-foot{
+.foot-flex{
   align-items: center;
   flex-flow: row wrap;
   justify-content: flex-start;
 }
 
-.paragraphs-foot > p{
+.foot-paragraphs > p{
   padding: 0 10px;
 }

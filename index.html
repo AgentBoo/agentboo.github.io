@@ -15,11 +15,11 @@
   <body>
     <header>
       <nav class="ribbon">
-        <div class="wrap flex flex-nav" id="navigation">
-          <div class="links-nav">
+        <div class="wrap flex nav-flex" id="navigation">
+          <div class="nav-links">
             <a class="link" href="https://agentboo.github.io/"> ZH </a>
           </div>
-          <div class="links-nav trig-down">
+          <div class="nav-links trig-down">
             <a class="link" href="https://agentboo.github.io/"> home </a>
             <a class="link" href="#">about me</a>
             <a class="link" href="#">skills</a>
@@ -31,16 +31,39 @@
       </nav>
     </header>
     <main>
-      <section>
-      </section>
-      <section>
-      </section>
-      <section>
-      </section>
+      <div class="jumbotron topsection-wrap topsection-parallax">
+        <section>
+          <p class="" id="ZH-intro">
+            Hi, I am Zuzka. I am a web developer and biochemist.<br>
+            The picture behind me has been borrowed from
+            http://pymol.sourceforge.net/pmimag/800/virus3600.jpg<br>
+            and is a temporary placeholder.
+          </p>
+        </section>
+      </div>
+      <div class="jumbotron flex bottomsection-flex bottomsection-wrap">
+        <section id="left-subsection">
+          <h1> About </h1>
+          <article>
+            <p> about.me </p>
+          </article>
+          <article>
+            <p> contact.me </p>
+            <p> skills </p>
+          </article>
+        </section>
+
+        <section id="right-subsection">
+          <h1> Portfolio </h1>
+          <article>
+            <p> portfolio </p>
+          </article>
+        </section>
+      </div>
     </main>
     <!-- Footer is fixed on desktops, not fixed on mobile-->
-    <footer class="ribbon rib-foot">
-      <div class="wrap flex flex-foot paragraphs-foot">
+    <footer class="ribbon foot-rib">
+      <div class="wrap flex foot-flex foot-paragraphs">
         <p class="link"> West Lafayette and Indianapolis, IN </p>
         <p class="link"> hanova.dung@gmail.com </p>
       </div>
