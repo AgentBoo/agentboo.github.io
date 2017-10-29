@@ -5,6 +5,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Font awesome CDN -->
+    <script src="https://use.fontawesome.com/43adbb1640.js"></script>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -13,16 +15,17 @@
   <body>
     <header>
       <nav class="ribbon">
-        <div class="flex flex-rib wrap" id="navigation">
-          <div class="links-rib">
-            <a href="https://agentboo.github.io/"> ZH </a>
+        <div class="wrap flex flex-nav" id="navigation">
+          <div class="links-nav">
+            <a class="link" href="https://agentboo.github.io/"> ZH </a>
           </div>
-          <div class="links-rib trig-down">
-            <a href="https://agentboo.github.io/"> home </a>
-            <a href="#">about me</a>
-            <a href="#">skills</a>
-            <a href="#">portfolio</a>
-            <a href="#">resume</a>
+          <div class="links-nav trig-down">
+            <a class="link" href="https://agentboo.github.io/"> home </a>
+            <a class="link" href="#">about me</a>
+            <a class="link" href="#">skills</a>
+            <a class="link" href="#">portfolio</a>
+            <!-- Resume link is a downloadable pdf that opens in a new window -->
+            <a class="link" class="downloadable" href="han_resume.pdf" target="_blank">resume</a>
           </div>
         </div>
       </nav>
@@ -35,7 +38,12 @@
       <section>
       </section>
     </main>
-    <footer>
+    <!-- Footer is fixed on desktops, not fixed on mobile-->
+    <footer class="ribbon rib-foot">
+      <div class="wrap flex flex-foot paragraphs-foot">
+        <p class="link"> West Lafayette and Indianapolis, IN </p>
+        <p class="link"> hanova.dung@gmail.com </p>
+      </div>
     </footer>
 
     <!-- Optional JavaScript -->

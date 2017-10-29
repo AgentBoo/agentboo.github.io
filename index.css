@@ -2,9 +2,13 @@
 body{
   box-sizing: border-box;
 
-  }
+}
 
-a{
+p{
+  margin: 0;
+  padding: 0;
+}
+.link{
   color: #e3e3e3;
   font-size: 13px;
   text-align: center;
@@ -12,7 +16,7 @@ a{
   text-transform: uppercase;
 }
 
-a:hover{
+.link:hover{
   color: white;
   text-decoration: none;
 }
@@ -23,25 +27,42 @@ a:hover{
   padding: 3.6vh 1vw;
 }
 
-/* NOTE: Navigation specific */
+.wrap{
+  margin: 0 5vmin;
+}
+
 .flex{
   display: flex;
 }
 
-.flex-rib{
+/* NOTE: Navigation specific */
+.flex-nav{
   align-items: center;
   flex-flow: row wrap;
   justify-content: space-between;
 }
 
-.wrap{
-  margin: 0 5vmin;
-}
-
-.links-rib > a{
+.links-nav > a{
   padding: 0 10px 3.6vh;
 }
 
 .trig-down > a:hover{
   border-bottom: solid white;
+}
+
+/* NOTE: Footer specific */
+.rib-foot{
+  position: fixed;
+    bottom: 0;
+  width: 100%;
+}
+
+.flex-foot{
+  align-items: center;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.paragraphs-foot > p{
+  padding: 0 10px;
 }
