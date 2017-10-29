@@ -15,16 +15,17 @@
   <body>
     <header>
       <nav class="ribbon">
-        <div class="flex flex-rib wrap" id="navigation">
-          <div class="links-rib">
-            <a href="https://agentboo.github.io/"> ZH </a>
+        <div class="wrap flex flex-nav" id="navigation">
+          <div class="links-nav">
+            <a class="link" href="https://agentboo.github.io/"> ZH </a>
           </div>
-          <div class="links-rib trig-down">
-            <a href="https://agentboo.github.io/"> home </a>
-            <a href="#">about me</a>
-            <a href="#">skills</a>
-            <a href="#">portfolio</a>
-            <a href="#">resume</a>
+          <div class="links-nav trig-down">
+            <a class="link" href="https://agentboo.github.io/"> home </a>
+            <a class="link" href="#">about me</a>
+            <a class="link" href="#">skills</a>
+            <a class="link" href="#">portfolio</a>
+            <!-- Resume link is a downloadable pdf that opens in a new window -->
+            <a class="link" class="downloadable" href="han_resume.pdf" target="_blank">resume</a>
           </div>
         </div>
       </nav>
@@ -38,9 +39,11 @@
       </section>
     </main>
     <!-- Footer is fixed on desktops, not fixed on mobile-->
-    <footer class="c-footer container">
-        <p> West Lafayette and Indianapolis, IN </p>
-        <p> hanova.dung@gmail.com </p>
+    <footer class="ribbon rib-foot">
+      <div class="wrap flex flex-foot paragraphs-foot">
+        <p class="link"> West Lafayette and Indianapolis, IN </p>
+        <p class="link"> hanova.dung@gmail.com </p>
+      </div>
     </footer>
 
     <!-- Optional JavaScript -->
