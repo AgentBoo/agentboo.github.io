@@ -104,7 +104,6 @@ li > a:hover{
 #bottom-section{
   padding: 0 1vw 4.41vh;
 }
-
 .c-art{
   /*border: solid orange;*/
   margin: 0 auto 2.2vh;
@@ -478,4 +477,58 @@ footer > p:hover {
       margin: 7.7px;
     }
 
+}
+
+/* NOTE: Main specific */
+.topsection-wrap{
+  height: 40vh;
+}
+
+#ZH-intro{
+  background: rgba(255,255,255,0.5);
+  color: white;
+  position: relative;
+    top: 10vh;
+  width: 47%;
+}
+
+.topsection-parallax{
+  background-attachment: fixed;
+  background-image: url("http://pymol.sourceforge.net/pmimag/800/virus3600.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bottomsection-flex{
+  align-items: flex-start;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+/* Left */
+#left-subsection{
+  border-right: solid black 1px;
+}
+
+/* Right */
+#right-subsection{
+  border-left: solid black 1px;
+}
+
+/* NOTE: Footer specific */
+.foot-rib{
+  position: fixed;
+    bottom: 0;
+  width: 100%;
+}
+
+.foot-flex{
+  align-items: center;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.foot-paragraphs > p{
+  padding: 0 10px;
 }
