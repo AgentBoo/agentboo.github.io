@@ -3,6 +3,7 @@ html{
   width: 100%;
 }
 body{
+  background: #e0dbdb;
   box-sizing: border-box;
   font-family: 'Helvetica', sans-serif;
   /*font-family: 'Source Sans Pro', sans-serif;*/
@@ -223,6 +224,16 @@ div > div > div {
   border-bottom: solid #e3e3e3 1px;
   padding-top: 30px;
   padding-bottom: 50px;
+}
+
+.wrap-subskills{
+  flex: 1;
+}
+.wrap-skills:hover .wrap-subskills {
+    opacity: .25;
+}
+.wrap-skills .wrap-subskills:hover {
+    opacity: 1;
 }
 
 #skills{
