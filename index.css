@@ -1,27 +1,12 @@
 /* NOTE: Encompassing */
-html{
-  width: 100%;
-}
 body{
   background: #e0dbdb;
   box-sizing: border-box;
   font-family: 'Helvetica', sans-serif;
-  /*font-family: 'Source Sans Pro', sans-serif;*/
-  /*font-family: 'Montserrat', sans-serif;*/
-  /*font-family: 'Oswald', sans-serif;*/
-  /*font-family: 'Julius Sans One', sans-serif;*/
-  /*font-family: 'Alegreya Sans SC', sans-serif;*/
   line-height: 1.5em;
   margin: 0;
   padding: 0;
   width: 100%;
-}
-
-p{
-  font-size: 13px;
-  margin: 0;
-  padding: 0;
-  text-align: left;
 }
 
 h1, h2, h3, h4, h5{
@@ -31,7 +16,7 @@ h1, h2, h3, h4, h5{
 
 i {
   background: black;
-  color: white;
+  color: #e3e3e3;
   border-radius: 50%;
   margin: 0 10px;
   padding: 13px 15px;
@@ -39,9 +24,26 @@ i {
 }
 
 i:hover{
-  background: orange;
-  color: blue;
+  background: #b7dee5;
+  color: grey;
+  transition: linear 0.3s;
 }
+
+p{
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+#ZH{
+  background: #151926;
+  border-radius: 50%;
+  margin: 0 10px;
+  padding: 13px;
+  text-align: center;
+}
+
 /* NOTE: Encompassing classes */
 .test-c{
   border: solid red;
@@ -58,7 +60,7 @@ i:hover{
 }
 
 .link{
-  color: blue;
+  color: #e3e3e3;
   font-size: 13px;
   text-align: center;
   text-decoration: none;
@@ -66,8 +68,9 @@ i:hover{
 }
 
 .link:hover{
-  color: red;
+  color: #b7dee5;
   text-decoration: none;
+  transition: linear 0.2s;
 }
 
 .notjumbotron{
@@ -96,7 +99,7 @@ i:hover{
 
 .links-nav > a{
   margin: 0 2px;
-  padding: 3.6vh 8px;
+  padding: 3.8vh 8px;
 }
 
 .ribbon-head{
@@ -132,7 +135,6 @@ i:hover{
 }
 
 /* Bottom section */
-
 /* About*/
 .content-aboutme{
   margin: 7vh 3vw;
@@ -150,7 +152,7 @@ i:hover{
 }
 
 .content-aboutme_text{
-  width: 100%;
+  /*width: 100%;*/
 }
 
 .content-aboutme_portfol{
@@ -221,19 +223,28 @@ div > div > div {
 }
 
 .content-skills{
+  /*background: #b7dee5;*/
   border-bottom: solid #e3e3e3 1px;
-  padding-top: 30px;
+  padding-top: 50px;
   padding-bottom: 50px;
 }
 
+.wrap-skills{
+  margin-top: 14px;
+}
 .wrap-subskills{
+  border-radius: 10px;
   flex: 1;
+  font-style: italic;
 }
 .wrap-skills:hover .wrap-subskills {
     opacity: .25;
+    transition: 0.4s;
 }
 .wrap-skills .wrap-subskills:hover {
+    border: solid #e3e3e3 1px;
     opacity: 1;
+    transition: 0.4s;
 }
 
 #skills{
@@ -259,4 +270,11 @@ div > img{
 
 .paragraphs-foot > p{
   padding: 0 10px;
+}
+
+/* NOTE: Different screens */
+@media screen and (min-width: 769px){
+  .content-aboutme_text{
+    width: 86%;
+  }
 }
