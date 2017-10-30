@@ -8,15 +8,14 @@
     <!-- Font awesome CDN -->
     <script src="https://use.fontawesome.com/43adbb1640.js"></script>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <!-- CSS -->
     <link rel="stylesheet" href="index.css">
   </head>
 
   <body>
     <!-- Navigation -->
     <header>
-      <nav class="ribbon rib-head">
+      <nav class="ribbon ribbon-head">
         <div class="wrap flex flex-nav" id="navigation">
           <!-- Logo - home -->
           <div class="links-nav">
@@ -25,11 +24,11 @@
           <!-- The rest of the navlinks -->
           <div class="links-nav trig-down">
             <a class="link" href="https://agentboo.github.io/"> home </a>
-            <a class="link" href="#">about</a>
-            <a class="link" href="#">skills</a>
-            <a class="link" href="#">portfolio</a>
+            <a class="link" href="#about">about</a>
+            <a class="link" href="#contact">contact</a>
+            <a class="link" href="#skills">skills</a>
             <!-- Resume link is a downloadable pdf that opens in a new window -->
-            <a class="link" class="downloadable" href="han_resume.pdf" target="_blank">resume</a>
+            <a class="link downloadable" href="han_resume.pdf" target="_blank">resume</a>
           </div>
         </div>
       </nav>
@@ -38,7 +37,7 @@
     <!-- About me, Skills, Portfolio -->
     <main>
       <!-- Top section -->
-      <section class="jumbotron wrap-topsection wrap-topsection_parallax">
+      <section id="topsection" class="notjumbotron wrap wrap-topsection wrap-topsection_parallax">
         <article>
           <p class="" id="ZH-intro">
             Hi, I am Zuzka. I am a web developer and biochemist.<br>
@@ -50,64 +49,80 @@
       </section>
 
       <!-- Bottom section -->
-      <section class="jumbotron flex flex-bottomsection wrap-bottomsection">
-        <!-- Left subsection -->
-        <div class="wrap-subsection" id="left-subsection">
-          <div class="">
-            <!-- About me -->
-            <article>
-              <h1> about.me </h1>
-              <div>
-                <p></p>
-              </div>
-              <div>
-                <strong>contact.me</strong>
-                <a href="#"> email </a>
-                <a href="#"> linkedin </a>
-                <a href="#"> github </a>
-              </div>
-            </article>
+      <section id="bottomsection">
+        <!-- About subsection -->
+        <section id="about" class="notjumbotron wrap wrap-bottomsection flex flex-aboutme test-c">
+          <!-- Left subsection - about.me -->
+          <article class="wrap-bottomsection_aboutme_L test-c">
+            <h5> about.me </h5>
+            <div class="flex flex_aboutme">
+              <p> The Iron Yard </p>
+              <p> Virginia Tech </p>
+              <p> walter </p>
+            </div>
 
-            <!-- Skills -->
-            <article>
-              <h1> skills </h1>
-              <div>
-                <p> front-end </p>
-                <p> back-end </p>
-                <p> bioinformatics </p>
+            <div class="flex flex-center content-aboutme">
+              <div class="">
+                <p> The Iron Yard </p>
+                <p> I am the last survivor of the Iron Yard. Three immersive months. Exhaustion. Survival. Complete mental nope-out by the end of it. </p>
               </div>
-            </article>
-          </div>
-        </div>
+              <div class="">
+                <p> Virginia Tech </p>
+                <p> Totally worth it </p>
+              </div>
+            </div>
 
-        <!-- Right subsection -->
-        <div class="wrap-subsection" id="right-subsection">
+          </article>
+          <article class="wrap-bottomsection_aboutme_R test-c">
+            <h5> portfolio.under.construction </h5>
+            <div class="flex flex-center">
+              <div>
+                <div></div>
+                <p> BrewDo </p>
+              </div>
+              <div>
+                <div></div>
+                <p> Honeybadgers </p>
+              </div>
+              <div>
+                <div></div>
+                <p> notreddit </p>
+              </div>
+              <div>
+                <div></div>
+                <p> Hangman </p>
+              </div>
+              <div>
+                <div></div>
+                <p> Bent Creek Pottery </p>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <!-- Contact me subsection -->
+        <section id="contactme" class="notjumbotron wrap wrap-bottomsection flex flex_contactme">
+          <h5> contact.me </h5>
           <div class="">
-            <h1> Portfolio.under.construction </h1>
-            <article>
-              <p> BrewDo </p>
-              <p> Honeybadgers </p>
-              <p> notreddit </p>
-              <p> Hangman </p>
-              <p> Bent Creek Pottery </p>
-            </article>
+            <a href="#"> email </a>
+            <a href="#"> linkedin </a>
+            <a href="#"> github </a>
           </div>
-        </div>
+        </section>
+
+        <!-- Skills subsection -->
+        <section id="skills" class="notjumbotron wrap wrap-bottomsection">
+          <h5> skills </h5>
+          <div class="flex flex_skills">
+          </div>
+        </section>
       </section>
-    </main>
 
     <!-- Footer is fixed on desktops, not fixed on mobile-->
-    <footer class="ribbon rib-foot">
+    <footer class="ribbon ribbon-foot">
       <div class="wrap flex flex-foot paragraphs-foot">
         <p class="link"> West Lafayette and Indianapolis, IN </p>
         <p class="link"> hanova.dung@gmail.com </p>
       </div>
     </footer>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-  </body>
 </html>

@@ -1,13 +1,37 @@
 /* NOTE: Encompassing */
 body{
   box-sizing: border-box;
-
-}
-
-p{
   margin: 0;
   padding: 0;
 }
+
+p{
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h5{
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* NOTE: Encompassing classes */
+.test-c{
+  border: solid red;
+}
+
+.flex{
+  display: flex;
+}
+
+.flex-center{
+  align-items: center;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
 .link{
   color: #e3e3e3;
   font-size: 13px;
@@ -21,31 +45,34 @@ p{
   text-decoration: none;
 }
 
-/* NOTE: Encompassing classes */
-.test-c{
-  border: solid red;
+.link:active{
+  color: white;
+  text-decoration: none;
+}
+
+.link:visited{
+  color: white;
+  text-decoration: none;
+}
+
+.notjumbotron{
+  background: white;
+  width: 100%;
 }
 
 .ribbon{
   background: black;
-  padding: 3.6vh 1vw;
+  padding: 3.6vh 0;
   position: fixed;
   width: 100%;
 }
 
 .wrap{
-  margin: 0 5vmin;
-}
-
-.flex{
-  display: flex;
+  box-sizing: border-box;
+  padding: 0 5vmin;
 }
 
 /* NOTE: Navigation specific */
-.rib-head{
-  top: 0;
-}
-
 .flex-nav{
   align-items: center;
   flex-flow: row wrap;
@@ -53,7 +80,12 @@ p{
 }
 
 .links-nav > a{
-  padding: 0 10px 3.6vh;
+  margin: 0 2px;
+  padding: 3.6vh 8px;
+}
+
+.ribbon-head{
+  top: 0;
 }
 
 .trig-down > a:hover{
@@ -61,16 +93,7 @@ p{
 }
 
 /* NOTE: Main specific */
-.wrap-subsection{
-  width: 50%;
-}
-
 /* Top section*/
-.wrap-topsection{
-  height: 42vh;
-  margin-top: 7.2vh;
-}
-
 #ZH-intro{
   background: rgba(255,255,255,0.5);
   color: white;
@@ -79,35 +102,98 @@ p{
   width: 47%;
 }
 
+.wrap-topsection{
+  height: 42vh;
+  margin-top: 7.2vh;
+}
+
 .wrap-topsection_parallax{
   background-attachment: fixed;
   background-image: url("http://pymol.sourceforge.net/pmimag/800/virus3600.jpg");
-  background-position: left;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 /* Bottom section */
-.flex-bottomsection{
+.wrap-bottomsection{
+}
+
+/* About*/
+.content-aboutme{
+  margin: 7vh auto;
+}
+
+.content-aboutme > div{
+  border-bottom: solid grey 2px;
+  padding: 10px 0;
+  width: 36vw;
+}
+
+.flex_aboutme{
   align-items: flex-start;
   flex-flow: row nowrap;
   justify-content: center;
+  position: relative;
+    bottom: 2px;
 }
 
-/* Left */
-#left-subsection{
+.flex_aboutme > p{
+  width: 11vw;
+}
+
+.flex_aboutme > p:first-child{
+  border: solid black 2px;
+}
+.flex_aboutme > p:first-child{
+  border: solid black 2px;
+}
+
+.flex_aboutme > p:nth-child(2){
+  border-top: solid black 2px;
+  border-bottom: solid black 2px;
+}
+
+.flex_aboutme > p:last-child{
+  border: solid black 2px;
+}
+
+.wrap-bottomsection_aboutme_L{
   border-right: solid black 1px;
-  height: 400px;
+  flex: 1;
 }
 
-/* Right */
-#right-subsection{
+.wrap-bottomsection_aboutme_R{
   border-left: solid black 1px;
-  height: 400px;
+  flex: 1;
+}
+
+/* Portfolio */
+div > div > div {
+  background: grey;
+  border: solid black 50px;
+  width: 180px;
+  height: 180px;
+}
+/* Contact me */
+.flex_contactme{
+  align-items: center;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+/* Skills */
+.flex_skills{
+  align-items: flex-start;
+  flex-flow: column;
+  justify-content: flex-start;
+}
+#skills{
+  margin-bottom: 10vh;
 }
 
 /* NOTE: Footer specific */
-.rib-foot{
+.ribbon-foot{
   bottom: 0;
 }
 
