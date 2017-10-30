@@ -24,8 +24,8 @@ i {
 }
 
 i:hover{
-  background: #b7dee5;
-  color: grey;
+  background: #fcfcfc;
+  color: #b7dee5;
   transition: linear 0.3s;
 }
 
@@ -155,9 +155,6 @@ p{
   /*width: 100%;*/
 }
 
-.content-aboutme_portfol{
-  margin-bottom: 100px;
-}
 
 .flex_aboutme{
   align-items: flex-start;
@@ -172,19 +169,22 @@ p{
 
 .wrap_aboutme_R{
   border-left: solid #e3e3e3 1px;
-  height: 520px;
+  height: 570px;
   margin: 50px auto 100px;
-  overflow-y: scroll;
+  overflow-y: hidden;
   flex: 1;
 }
 
+.i-aboutme{
+}
+
 /* Portfolio */
-div > div > div {
+.placeholder {
   background: grey;
   border: solid black 8px;
   width: 35vmin;
   height: 35vmin;
-  margin: 0 auto;
+  margin: 0 auto 20px;
 }
 
 /* Contact me */
@@ -206,7 +206,25 @@ div > div > div {
   padding-top: 12px;
 }
 
+.css-email{
+  background-color: transparent;
+  cursor: pointer;
+}
 
+.css-email:after{
+  content: "hanova.dung@gmail.com";
+  color: #7f7c7b;
+  font-family: 'Source Sans Pro', Courier, sans-serif;
+  font-size: 16px;
+  padding-left: 1.4vmin;
+}
+
+#contactme > div > i:hover{
+  background: transparent;
+  border: none;
+  color: #b7dee5;
+  transition: linear 0s;
+}
 /* Skills */
 .flex_skills{
   align-items: flex-start;
@@ -237,11 +255,15 @@ div > div > div {
   flex: 1;
   font-style: italic;
 }
+.wrap-subskills > a{
+  color: #625b66;
+}
 .wrap-skills:hover .wrap-subskills {
     opacity: .25;
     transition: 0.4s;
 }
 .wrap-skills .wrap-subskills:hover {
+    color: black;
     border: solid #e3e3e3 1px;
     opacity: 1;
     transition: 0.4s;
@@ -256,6 +278,13 @@ div > img{
   padding: 10px;
 }
 
+.flex-i{
+  align-items: center;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  position: relative;
+  right: 48px;
+}
 /* NOTE: Footer specific */
 .ribbon-foot{
   bottom: 0;
@@ -277,4 +306,11 @@ div > img{
   .content-aboutme_text{
     width: 86%;
   }
+
+  .i-aboutme{
+    position: relative;
+      bottom: 50px;
+      right: 74px;
+  }
+
 }
