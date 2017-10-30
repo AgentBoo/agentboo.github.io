@@ -1,18 +1,29 @@
 /* NOTE: Encompassing */
+html{
+  width: 100%;
+}
 body{
   box-sizing: border-box;
+  font-family: 'Helvetica', sans-serif;
+  /*font-family: 'Source Sans Pro', sans-serif;*/
+  /*font-family: 'Montserrat', sans-serif;*/
+  /*font-family: 'Oswald', sans-serif;*/
+  /*font-family: 'Julius Sans One', sans-serif;*/
+  /*font-family: 'Alegreya Sans SC', sans-serif;*/
+  line-height: 1.5em;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 p{
   font-size: 13px;
   margin: 0;
   padding: 0;
-  text-align: center;
+  text-align: left;
 }
 
-h5{
+h1, h2, h3, h4, h5{
   margin: 0 auto;
   text-align: center;
 }
@@ -33,7 +44,7 @@ h5{
 }
 
 .link{
-  color: #e3e3e3;
+  color: blue;
   font-size: 13px;
   text-align: center;
   text-decoration: none;
@@ -41,17 +52,7 @@ h5{
 }
 
 .link:hover{
-  color: white;
-  text-decoration: none;
-}
-
-.link:active{
-  color: white;
-  text-decoration: none;
-}
-
-.link:visited{
-  color: white;
+  color: red;
   text-decoration: none;
 }
 
@@ -86,6 +87,7 @@ h5{
 
 .ribbon-head{
   top: 0;
+  z-index: 2;
 }
 
 .trig-down > a:hover{
@@ -110,70 +112,63 @@ h5{
 .wrap-topsection_parallax{
   background-attachment: fixed;
   background-image: url("http://pymol.sourceforge.net/pmimag/800/virus3600.jpg");
-  background-position: center;
+  background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 /* Bottom section */
-.wrap-bottomsection{
-}
 
 /* About*/
 .content-aboutme{
-  margin: 7vh auto;
+  margin: 7vh 3vw;
+  min-width: 300px;
 }
 
 .content-aboutme > div{
-  border-bottom: solid grey 2px;
-  padding: 10px 0;
-  width: 36vw;
+  border-bottom: 1px solid #e5e5e5;
+  margin: 0 auto 25px;
+  position: relative;
+}
+
+.content-aboutme > div > p:last-child{
+  margin: 0 auto 15px;
+}
+
+.content-aboutme_text{
+  width: 100%;
+}
+
+.content-aboutme_portfol{
+  margin-bottom: 100px;
 }
 
 .flex_aboutme{
   align-items: flex-start;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: center;
-  position: relative;
-    bottom: 2px;
 }
 
-.flex_aboutme > p{
-  width: 11vw;
-}
-
-.flex_aboutme > p:first-child{
-  border: solid black 2px;
-}
-.flex_aboutme > p:first-child{
-  border: solid black 2px;
-}
-
-.flex_aboutme > p:nth-child(2){
-  border-top: solid black 2px;
-  border-bottom: solid black 2px;
-}
-
-.flex_aboutme > p:last-child{
-  border: solid black 2px;
-}
-
-.wrap-bottomsection_aboutme_L{
-  border-right: solid black 1px;
+.wrap_aboutme_L{
+  margin: 50px auto 100px;
   flex: 1;
 }
 
-.wrap-bottomsection_aboutme_R{
-  border-left: solid black 1px;
+.wrap_aboutme_R{
+  border-left: solid #e3e3e3 1px;
+  height: 520px;
+  margin: 50px auto 100px;
+  overflow-y: scroll;
   flex: 1;
 }
 
 /* Portfolio */
 div > div > div {
   background: grey;
-  border: solid black 50px;
-  width: 180px;
-  height: 180px;
+  border: solid black 8px;
+  width: 35vmin;
+  height: 35vmin;
+  margin: 0 auto;
 }
 /* Contact me */
 .flex_contactme{
@@ -182,19 +177,46 @@ div > div > div {
   justify-content: center;
 }
 
+.content-contactme{
+  border-top: solid #e3e3e3 1px;
+  border-bottom: solid #e3e3e3 1px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
 /* Skills */
 .flex_skills{
   align-items: flex-start;
-  flex-flow: column;
-  justify-content: flex-start;
+  flex-flow: row wrap;
+  justify-content: center;
 }
+
+.flex_skills > div {
+  padding: 25px 50px;
+}
+
+.flex_skills > div > a {
+  text-align: center;
+}
+.content-skills{
+  border-bottom: solid #e3e3e3 1px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
 #skills{
-  margin-bottom: 10vh;
+  margin-bottom: 12vh;
+}
+
+div > img{
+  height: 60px;
+  padding: 10px;
 }
 
 /* NOTE: Footer specific */
 .ribbon-foot{
   bottom: 0;
+  z-index: 2;
 }
 
 .flex-foot{

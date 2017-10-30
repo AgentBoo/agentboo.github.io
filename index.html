@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Font awesome CDN -->
     <script src="https://use.fontawesome.com/43adbb1640.js"></script>
-
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300|Julius+Sans+One|Montserrat|Oswald|Source+Sans+Pro" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="index.css">
   </head>
@@ -25,7 +26,7 @@
           <div class="links-nav trig-down">
             <a class="link" href="https://agentboo.github.io/"> home </a>
             <a class="link" href="#about">about</a>
-            <a class="link" href="#contact">contact</a>
+            <a class="link" href="#contactme">contact</a>
             <a class="link" href="#skills">skills</a>
             <!-- Resume link is a downloadable pdf that opens in a new window -->
             <a class="link downloadable" href="han_resume.pdf" target="_blank">resume</a>
@@ -51,34 +52,28 @@
       <!-- Bottom section -->
       <section id="bottomsection">
         <!-- About subsection -->
-        <section id="about" class="notjumbotron wrap wrap-bottomsection flex flex-aboutme test-c">
+        <section id="about" class="notjumbotron flex flex_aboutme h3">
           <!-- Left subsection - about.me -->
-          <article class="wrap-bottomsection_aboutme_L test-c">
-            <h5> about.me </h5>
-            <div class="flex flex_aboutme">
-              <p> The Iron Yard </p>
-              <p> Virginia Tech </p>
-              <p> walter </p>
-            </div>
-
+          <article class="wrap_aboutme_L h3">
+            <h3> about.me </h3>
             <div class="flex flex-center content-aboutme">
-              <div class="">
+              <div class="content-aboutme_text">
                 <p> The Iron Yard </p>
                 <p> I am the last survivor of the Iron Yard. Three immersive months. Exhaustion. Survival. Complete mental nope-out by the end of it. </p>
               </div>
-              <div class="">
+              <div class="content-aboutme_text">
                 <p> Virginia Tech </p>
                 <p> Totally worth it </p>
               </div>
             </div>
-
           </article>
-          <article class="wrap-bottomsection_aboutme_R test-c">
-            <h5> portfolio.under.construction </h5>
-            <div class="flex flex-center">
-              <div>
+          <article class="wrap_aboutme_R h3">
+            <h3> portfolio.under.construction </h3>
+            <div class="flex flex-center content-aboutme">
+              <div class="content-aboutme_portfol">
                 <div></div>
                 <p> BrewDo </p>
+                <p> BrewDo is a version control app for brewing recipes, allowing a user to read, write, edit, delete, collect, clone, and see a progression in time of their batching and recipe trial iterations </p>
               </div>
               <div>
                 <div></div>
@@ -101,20 +96,41 @@
         </section>
 
         <!-- Contact me subsection -->
-        <section id="contactme" class="notjumbotron wrap wrap-bottomsection flex flex_contactme">
+        <section id="contactme" class="notjumbotron flex flex_contactme content-contactme">
           <h5> contact.me </h5>
           <div class="">
-            <a href="#"> email </a>
-            <a href="#"> linkedin </a>
-            <a href="#"> github </a>
+            <a class="link" href="#"> email </a>
+            <a class="link" href="#"> linkedin </a>
+            <a class="link" href="#"> github </a>
           </div>
         </section>
 
         <!-- Skills subsection -->
-        <section id="skills" class="notjumbotron wrap wrap-bottomsection">
+        <section id="skills" class="notjumbotron wrap content-skills">
           <h5> skills </h5>
           <div class="flex flex_skills">
+            <div class="flex flex-center test-c">
+              <p> front end </p>
+              <a class="link" href="#"> HTML5 </a>
+              <a class="link" href="#"> CSS3 </a>
+              <a class="link" href="#"> ES6 </a>
+              <a class="link" href="#"> Bootstrap </a>
+            </div>
+            <div class="flex flex-center test-c">
+              <p> back end </p>
+              <a class="link" href="#"> Node.js </a>
+              <a class="link" href="#"> Ruby on Rails </a>
+              <a class="link" href="#"> MongoDB </a>
+              <a class="link" href="#"> PostgreSQL, SQLite </a>
+            </div>
+            <div class="flex flex-center test-c">
+              <p> bioinformatics </p>
+              <a class="link" href="#"> GROMACS </a>
+              <a class="link" href="#"> PyMOL </a>
+              <a class="link" href="#"> Geneious </a>
+            </div>
           </div>
+
         </section>
       </section>
 
