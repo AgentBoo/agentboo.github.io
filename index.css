@@ -28,6 +28,19 @@ h1, h2, h3, h4, h5{
   text-align: center;
 }
 
+i {
+  background: black;
+  color: white;
+  border-radius: 50%;
+  margin: 0 10px;
+  padding: 13px 15px;
+  text-align: center;
+}
+
+i:hover{
+  background: orange;
+  color: blue;
+}
 /* NOTE: Encompassing classes */
 .test-c{
   border: solid red;
@@ -170,6 +183,7 @@ div > div > div {
   height: 35vmin;
   margin: 0 auto;
 }
+
 /* Contact me */
 .flex_contactme{
   align-items: center;
@@ -183,6 +197,12 @@ div > div > div {
   padding-top: 30px;
   padding-bottom: 50px;
 }
+
+.content-contactme > div{
+  border: none;
+  padding-top: 12px;
+}
+
 
 /* Skills */
 .flex_skills{
@@ -198,6 +218,7 @@ div > div > div {
 .flex_skills > div > a {
   text-align: center;
 }
+
 .content-skills{
   border-bottom: solid #e3e3e3 1px;
   padding-top: 30px;
