@@ -33,7 +33,7 @@ p{
   font-size: 13px;
   margin: 0;
   padding: 0;
-  text-align: left;
+  text-align: justify;
 }
 
 #ZH{
@@ -121,6 +121,9 @@ p{
   width: 47%;
 }
 
+.compensate-for-fixed-nav{
+  margin-top: 10vh;
+}
 .wrap-topsection{
   height: 42vh;
   margin-top: 7.2vh;
@@ -170,7 +173,7 @@ p{
 
 .wrap_aboutme_R{
   border-left: solid #e3e3e3 1px;
-  height: 570px;
+  height: 600px;
   margin: 50px auto 100px;
   overflow-y: hidden;
   flex: 1;
@@ -286,6 +289,13 @@ div > img{
   position: relative;
   right: 48px;
 }
+
+.title_aboutme{
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 22px;
+}
+
 /* NOTE: Footer specific */
 .ribbon-foot{
   bottom: 0;
@@ -301,6 +311,7 @@ div > img{
 .paragraphs-foot > p{
   padding: 0 10px;
 }
+
 
 /* NOTE: Different screens */
 @media screen and (min-width: 769px){

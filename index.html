@@ -52,10 +52,11 @@
       <!-- Bottom section -->
       <section id="bottomsection">
         <!-- About subsection -->
-        <section id="about" class="notjumbotron flex flex_aboutme">
+        <a id="about">
+        <section class="notjumbotron flex flex_aboutme">
           <!-- Left subsection - about.me -->
           <article class="wrap_aboutme_L">
-            <h4> about.me </h4>
+            <h4 class="compensate-for-fixed-nav"> about.me </h4>
             <div class="flex flex-center content-aboutme">
               <div class="content-aboutme_text">
                 <p> The Iron Yard </p>
@@ -71,36 +72,39 @@
           </article>
           <!-- Right subsection - portfolio -->
           <article class="wrap_aboutme_R">
-            <h4> portfolio.under.construction </h4>
+            <a name="brewdo" class="compensate-for-fixed-nav">
+            <h4 class="fixed compensate-for-fixed-nav"> portfolio.under.construction </h4>
             <div class="flex flex-center content-aboutme">
               <div class="content-aboutme_text">
                 <div class="placeholder"></div>
                 <div class="flex flex-i">
                   <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
-                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                  <a href="#honeybadgers"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                 </div>
-                <p> BrewDo </p>
-                <p> BrewDo is a version control app for brewing recipes, allowing a user to read, write, edit, delete, collect, clone, and see a progression in time of their batching and recipe trial iterations </p>
-              </div>
-              <div class="content-aboutme_text">
-                <div></div>
-                <p> Honeybadgers </p>
-              </div>
-              <div class="content-aboutme_text">
-                <div></div>
-                <p> notreddit </p>
-              </div>
-              <div class="content-aboutme_text">
-                <div></div>
-                <p> Hangman </p>
-              </div>
-              <div class="content-aboutme_text">
-                <div></div>
-                <p> Bent Creek Pottery </p>
+                <p class="title_aboutme"> BrewDo </p>
+                <p> BrewDo allows a brewer, or homebrewer, to collect, create, and iteratively experiment with beer recipe formulas, while keeping track of changes made from batch to batch. BrewDo was built exclusively with Ruby on Rails, Sass, and Bootstrap </p>
               </div>
             </div>
+              <br>
+            </a>
+
+              <a name="honeybadgers" class="compensate-for-fixed-nav">
+              <h4 class="fixed compensate-for-fixed-nav"> portfolio.under.construction </h4>
+              <div class="flex flex-center content-aboutme">
+                <div class="content-aboutme_text">
+                  <div class="placeholder"></div>
+                  <div class="flex flex-i">
+                    <a href="#brewdo"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                  </div>
+                  <p class="title_aboutme"> BrewDo </p>
+                  <p> BrewDo allows a brewer, or homebrewer, to collect, create, and iteratively experiment with beer recipe formulas, while keeping track of changes made from batch to batch. BrewDo was built exclusively with Ruby on Rails, Sass, and Bootstrap </p>
+                </div>
+            </div>
+          </a>
           </article>
         </section>
+      </a>
 
         <!-- Contact me subsection -->
         <section id="contactme" class="notjumbotron flex flex_contactme content-contactme">
