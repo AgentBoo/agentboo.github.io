@@ -36,6 +36,10 @@ p{
   text-align: justify;
 }
 
+.s-for_mobile{
+  display: none;
+}
+
 #ZH{
   background: #151926;
   border-radius: 50%;
