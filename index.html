@@ -14,146 +14,246 @@
   </head>
 
   <body>
-    <!-- Navigation -->
+    <!-- Navigation is NOT fixed on desktops, fixed on mobile-->
     <header>
       <nav class="ribbon ribbon-head">
-        <div class="wrap flex flex-nav" id="navigation">
+        <div class="base flex flex-rc flex-rc-nav_j flex-media-nav">
           <!-- Logo - home -->
-          <div class="links-nav">
-            <a id="ZH" class="link" href="https://agentboo.github.io/"> ZH </a>
+          <div class="">
+            <a id="ZH" class="" href="https://agentboo.github.io/"> ZH </a>
           </div>
           <!-- The rest of the navlinks -->
-          <div id="menu-nav" class="ul-nav links-nav trig-down">
-            <a id="menu-bars" class="s-for_mobile"><i class="fa fa-bars" aria-hidden="true"></i></a>
+          <div id="links-nav" class="links-nav">
+            <i id="js-fa-bars" class="fa fa fa-terminal css-menu" aria-hidden="true"></i>
             <a class="link" href="https://agentboo.github.io/"> home </a>
             <a class="link" href="#about">about</a>
             <a class="link" href="#contactme">contact</a>
             <a class="link" href="#skills">skills</a>
             <!-- Resume link is a downloadable pdf that opens in a new window -->
-            <a class="link downloadable" href="han_resume.pdf" target="_blank">resume</a>
+            <a class="link" href="han_resume.pdf" target="_blank">resume</a>
           </div>
         </div>
       </nav>
     </header>
 
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <!-- About me, Skills, Portfolio -->
     <main>
-      <!-- Top section -->
-      <section id="topsection" class="notjumbotron wrap wrap-topsection wrap-topsection_parallax">
-        <article>
-          <p class="" id="ZH-intro">
-            Hi, I am Zuzka. I am a web developer and biochemist.<br>
-            The picture behind me has been borrowed from
-            http://pymol.sourceforge.net/pmimag/800/virus3600.jpg<br>
-            and is a temporary placeholder.
-          </p>
-        </article>
+      <!-- Top section has the parallax -->
+      <section id="topsection" class="notjumbotron base parallax-topsection">
+        <p class="" id="ZH-intro">
+          The molecule behind me is a temporary placeholder
+        </p>
       </section>
 
-      <!-- Bottom section -->
+      <!-- Bottom section has everything else -->
       <section id="bottomsection">
         <!-- About subsection -->
-        <a id="about">
-        <section class="notjumbotron flex flex_aboutme">
+        <section class="notjumbotron flex flex-rca flex-media_about">
           <!-- Left subsection - about.me -->
-          <article class="wrap_aboutme_L">
-            <h4 class="compensate-for-fixed-nav"> about.me </h4>
-            <div class="flex flex-center content-aboutme">
-              <div class="content-aboutme_text">
-                <p> The Iron Yard </p>
-                <p> I am the last survivor of the Iron Yard. Three immersive months. Exhaustion. Survival. Complete mental nope-out by the end of it. </p>
+          <article id="about" class="base-aboutL">
+            <h4 class=""> about.me </h4>
+            <div class="flex flex-cc">
+              <!-- TIY -->
+              <div class="subcontent text">
                 <i class="fa fa-laptop i-aboutme" aria-hidden="true"></i>
+                <div>
+                  <p class="title"> The Iron Yard </p>
+                  <p>
+                    I am a recent graduate of
+                    <a class="inlineLink" href="https://www.theironyard.com/" target="_blank">The Iron Yard</a>,
+                    Indianapolis, where I spent 4 months being trained full-time as a front- and back-end developer.
+                    A couple of the projects that I enjoyed working on are included in this portfolio, but most of my work is on
+                    <a class="inlineLink" href="https://github.com/AgentBoo" target="_blank">GitHub</a>.
+                    I also have a resume attached, if you would like to take a
+                    <a class="inlineLink" href="han_resume.pdf" target="_blank">look</a>.
+                   </p>
+                </div>
               </div>
-              <div class="content-aboutme_text">
-                <p> Virginia Tech </p>
-                <p> Totally worth it </p>
-                <i class="fa fa-flask i-aboutme" aria-hidden="true"></i>
+              <!-- VT -->
+              <div class="subcontent text">
+                <i id="js-fa-flask" class="fa fa-flask i-aboutme" aria-hidden="true"></i>
+                <div>
+                  <p class="title"> Virginia Tech </p>
+                  <p>
+                    Prior to coming to The Iron Yard, I was trained as a biochemist, with a focus on gene analysis and other bioinformatics methods.
+                  </p>
+                  <div id="memo">
+                    <p><small>
+                      At Virginia Tech, I dedicated my time to research. I worked at a protein simulations lab,
+                      utilizing methods such as molecular dynamics simulations, and investigated interactions of toxic species of proteins involved in Alzheimer's disease and Type II Diabetes.
+                      I was also working at a tissue regeneration lab, at the cross-section of biopolymer engineering and additive manufacturing,
+                      where I worked with UV-curable polymers and tested their biocompatibility on immortalized mouse bone tissue cells.
+                      These polymers were used for
+                      <a class="inlineLink" href="https://www.youtube.com/watch?v=w9lqn-MMs4g" target="_blank"> microstereolithographic </a>
+                      printing (3D printing technique) of tissue scaffolds with intricate microarchitecture that were intended assist the body in rebuilding its own tissues. (I promise I don't speak like this in person :D)
+                      <br><br>
+                      That was all to say that I love research, technology, and can get pretty nostalgic about it :D.
+                      <br><br>
+                    </small></p>
+                  </div>
+                  <p>
+                    When it was time for me to decide where I would like to go next, I came to this conclusion:
+                    I could either continue doing research, narrow my focus on a particular scientific riddle, and attempt to solve it,
+                    or I could learn to build software and create tools to help others solve riddles of their own (and within my lifetime).
+                    I chose the latter, and I chose the opportunity to one day share neat things about science with a wider audience in a not-research-journals way.
+                    This motivation brought me to The Iron Yard, where I learned to translate research and problem solving skills into code.
+                  </p>
+                </div>
+              </div>
+              <!-- Stuff -->
+              <div class="subcontent text">
+                <i id="battery" class="fa fa-battery-full i-aboutme" aria-hidden="true"></i>
+                <div>
+                  <p class="title"> Energy sources </p>
+                  <p>
+                    <s>K-pop</s> Sour patch kids and ginger ale.
+                    <!-- I am fueled by ginger ale and sour patch kids. <span class="lowOpacity">(and k-pop)</span> -->
+                   </p>
+                </div>
               </div>
             </div>
           </article>
-          <!-- Right subsection - portfolio -->
-          <article class="wrap_aboutme_R">
-            <a name="brewdo" class="compensate-for-fixed-nav">
-            <h4 class="fixed compensate-for-fixed-nav"> portfolio.under.construction </h4>
-            <div class="flex flex-center content-aboutme">
-              <div class="content-aboutme_text">
-                <div class="placeholder"></div>
-                <div class="flex flex-i">
-                  <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
-                  <a href="#honeybadgers"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-                </div>
-                <p class="title_aboutme"> BrewDo </p>
-                <p> BrewDo allows a brewer, or homebrewer, to collect, create, and iteratively experiment with beer recipe formulas, while keeping track of changes made from batch to batch. BrewDo was built exclusively with Ruby on Rails, Sass, and Bootstrap </p>
-              </div>
-            </div>
-              <br>
-            </a>
 
-              <a name="honeybadgers" class="compensate-for-fixed-nav">
-              <h4 class="fixed compensate-for-fixed-nav"> portfolio.under.construction </h4>
-              <div class="flex flex-center content-aboutme">
-                <div class="content-aboutme_text">
-                  <div class="placeholder"></div>
-                  <div class="flex flex-i">
-                    <a href="#brewdo"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-                  </div>
-                  <p class="title_aboutme"> BrewDo </p>
-                  <p> BrewDo allows a brewer, or homebrewer, to collect, create, and iteratively experiment with beer recipe formulas, while keeping track of changes made from batch to batch. BrewDo was built exclusively with Ruby on Rails, Sass, and Bootstrap </p>
+          <!-- Right subsection - portfolio -->
+          <article class="base-aboutR">
+            <h4 class=""> portfolio.under.construction </h4>
+            <div id="portfolio" class="flex flex-cc">
+
+              <!-- Brewdo -->
+              <div id="brewdo" class="subcontent text">
+                <!-- placeholder box -->
+                <a href="http://brewdo.herokuapp.com/" target="_blank">
+                  <div id="brewdoback" class="placeholder base-portfolio"></div>
+                </a>
+                <p class="title"> BrewDo </p>
+                <p class="">
+                  BrewDo allows homebrewers collect, create, and iteratively experiment with beer recipe formulas, while keeping track of changes made from batch to batch.
+                  BrewDo was an 18 day group project built with Ruby on Rails, PostgreSQL, Omniauth, diffy, Kaminari, and Bootstrap.
+                </p>
+                <!-- Arrows -->
+                <div class="flex flex-i base-arrows">
+                  <a><i class="fa fa-long-arrow-left" aria-hidden="true"></i></a>
+                  <a id="btn"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                 </div>
+              </div>
+
+              <!-- Honeybadgers -->
+              <div id="honeybadgers" class="subcontent text">
+                <!-- placeholder box -->
+                <div class="placeholder base-portfolio"></div>
+                <p class="title"> Honeybadgers </p>
+                <p class="">
+                  Honeybadgers is a place to find the most unique and charismatic (textile) badges (:D).
+                  This is an e-commerce website built as a group project at The Iron Yard, and rebuilt post-graduation by myself.
+                  Honeybadgers utilizes React and Bootstrap on the front-end, and Rails, Stripe, Omniauth, Refile, and Webpacker for the back-end.
+                </p>
+                <!-- Arrows -->
+                <div class="flex flex-i base-arrows">
+                  <a href="#brewdo"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></a>
+                  <a href="#brewdo"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                </div>
+              </div>
+
+              <!-- notreddit -->
+              <div id="notreddit" class="subcontent text">
+                <!-- placeholder box -->
+                <div class="placeholder base-portfolio"></div>
+                <p class="title"> notreddit </p>
+                <p class="">
+                  notreddit is built after Reddit. No twists. Built exclusively with Rails and Bootstrap.
+                </p>
+                <!-- Arrows -->
+                <div class="flex flex-i base-arrows">
+                  <a href="#brewdo"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></a>
+                  <a href="#brewdo"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                </div>
+              </div>
+
+              <!-- todos -->
+              <div id="todo" class="subcontent text">
+                <!-- placeholder box -->
+                <div class="placeholder base-portfolio"></div>
+                <p class="title"> RainbowDos </p>
+                <p class="">
+                  Simple Todos built with Node.js, Express, and Sequelize.
+                </p>
+                <!-- Arrows -->
+                <div class="flex flex-i base-arrows">
+                  <a href="#brewdo"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></a>
+                  <a href="#brewdo"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                </div>
+              </div>
+
+              <!-- Pottery -->
+              <div id="pottery" class="subcontent text">
+                <!-- placeholder box -->
+                <div class="placeholder base-portfolio"></div>
+                <p class="title"> Bent Creek Ceramics </p>
+                <p class="">
+                  This was the very first project assigned at The Iron Yard, week 1, during our front-end training.
+                </p>
+                <!-- Arrows -->
+                <div class="flex flex-i base-arrows">
+                  <a href="#brewdo"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></a>
+                  <a href="#brewdo"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                </div>
+              </div>
+
             </div>
-          </a>
           </article>
         </section>
-      </a>
 
         <!-- Contact me subsection -->
-        <section id="contactme" class="notjumbotron flex flex_contactme content-contactme">
+        <section id="contactme" class="notjumbotron flex flex-cc base-contact">
           <h5> contact.me </h5>
           <div class="">
-            <i id="js-envelope" class="fa fa-envelope" aria-hidden="true"></i>
+            <i id="js-envelope" class="fa fa-envelope css-envelope" aria-hidden="true"></i>
             <a href="https://github.com/AgentBoo" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
             <a href="https://www.linkedin.com/in/zuzka-dung-han-60b032b0/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
           </div>
         </section>
 
         <!-- Skills subsection -->
-        <section id="skills" class="notjumbotron wrap content-skills">
+        <section id="skills" class="notjumbotron base-skills">
           <h5> skills </h5>
-          <div class="flex flex_skills wrap-skills">
-            <div class="flex flex-center wrap-subskills">
+          <div class="flex flex-rca flex-media_skills base base-skills">
+            <div class="flex flex-cc base-subskills">
               <h5> front end </h5>
               <a class="link hidden" href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" target="_blank"> HTML5 </a>
               <a class="link hidden" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3" target="_blank"> CSS3 </a>
               <a class="link hidden" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> ES6 </a>
               <a class="link hidden" href="https://getbootstrap.com/" target="_blank"> Bootstrap </a>
             </div>
-            <div class="flex flex-center wrap-subskills">
+            <div class="flex flex-cc base-subskills">
               <h5> back end </h5>
               <a class="link hidden" href="https://nodejs.org/en/about/" target="_blank"> Node.js </a>
               <a class="link hidden" href="http://rubyonrails.org/" target="_blank"> Ruby on Rails </a>
               <a class="link hidden" href="https://www.mongodb.com/what-is-mongodb" target="_blank"> MongoDB </a>
               <a class="link hidden" href="https://www.postgresql.org/about/" target="_blank"> PostgreSQL </a>
             </div>
-            <div class="flex flex-center wrap-subskills">
+            <div class="flex flex-cc base-subskills">
               <h5> bioinformatics </h5>
               <a class="link hidden" href="http://www.gromacs.org/About_Gromacs" target="_blank"> GROMACS </a>
               <a class="link hidden" href="https://pymol.org/2/" target="_blank"> PyMOL </a>
               <a class="link hidden" href="https://www.geneious.com/" target="_blank"> Geneious </a>
+              <br>
             </div>
           </div>
 
         </section>
       </section>
-
+    </main>
     <!-- Footer is fixed on desktops, not fixed on mobile-->
     <footer class="ribbon ribbon-foot">
-      <div class="wrap flex flex-foot paragraphs-foot">
+      <div class="base flex flex-rc flex-rc-foot_j">
         <p class="link"> West Lafayette and Indianapolis, IN </p>
-        <!-- <p class="link"> hanova.dung@gmail.com </p> -->
+        <p class="link"> hanova.dung@gmail.com </p>
       </div>
     </footer>
+
+    <!-- Scroll to top button -->
+    <i id="js-fa-up" class="fa fa-long-arrow-up" aria-hidden="true" title="Go to Top"></i>
+
     <script src="index.js"></script>
   </body>
 </html>
