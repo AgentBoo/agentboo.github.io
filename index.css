@@ -1,340 +1,326 @@
 body{
+  background: #e0dbdb;
   box-sizing: border-box;
-  color: #12073a;
-  font-family: 'Source Sans Pro', Courier, sans-serif;
-  font-size: 1.1em;
-  line-height: 0.9em;
-  /*font-family: 'Roboto Condensed', sans-serif;*/
-  /*font-family: 'Lato', sans-serif;*/
-  /*font-family: 'Source Sans Pro', sans-serif;*/
-  border: 0;
+  font-family: 'Helvetica', sans-serif;
+  line-height: 1.5em;
   margin: 0;
-  overflow: hidden;
   padding: 0;
-}
-
-/* NOTE: Encompassing */
-.disabled {
-  cursor: not-allowed;
-  opacity: 0.6;
-}
-
-.downloadable {
-  cursor: pointer;
-  opacity: 0.6;
-}
-
-.container{
-  box-sizing: border-box;
-  margin: 0 2.1vw;
-}
-
-.s-for_mobile{
-  display: none;
-}
-
-hr{
-  border: solid 0.6px white;
-  margin: 3.3vh auto;
-}
-
-i{
-  color: #12073a;
-}
-
-a{
-  color: #09023a;
-  text-decoration: none;
-}
-
-ul{
-  list-style: none;
-}
-
-.sub-text{
-  font-size: 0.8em;
-}
-
-/* NOTE: Navigation */
-.c-nav{
-  background-color: white;
-  opacity: 0.85;
-  padding: 2vh 4vw;
-  position: fixed;
-    right: 0;
-    top: 0;
   width: 100%;
 }
 
-.ul-nav{
-  display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-end;
+h1, h2, h3, h4, h5{
+  margin: 0 auto;
+  padding: 0 auto;
+  text-align: center;
 }
 
-ul > li{
-  margin: 1vh 1vw;
+a{
+  margin: 0;
+  padding: 0;
 }
 
-li > a:hover{
-  color: #97dbd1;
-  transition: 0.3s;
-}
-
-
-/* NOTE: Main */
-.c-main{
-  box-sizing: border-box;
-  display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-}
-
-/*top-section*/
-#myname{
-  margin: 25.7vh auto 2vh;
-  width: 20vw;
-}
-
-#myname > p{
-  margin: 9px 0;
-}
-
-/*bottom-section*/
-#bottom-section{
-  padding: 0 1vw 4.41vh;
-}
-.c-art{
-  /*border: solid orange;*/
-  margin: 0 auto 2.2vh;
-  padding-top: 125px;
-}
-
-.c-sub-art{
-  background-color: rgba(226, 226, 226, 0.4);
-  border-radius: 4px;
-  max-width: 425px;
-  padding: 6px;
-}
-
-#intro, #aboutme, #skills, #portfolio{
-  margin-bottom: 110vh;
-}
-
-/*about me*/
-.aboutme-art{
-  padding-bottom: 1vh;
-}
-
-.aboutme-icons{
-  display: flex;
-    align-items: center;
-    flex-flow: row nowrap;
-    justify-content: flex-end;
-}
-
-.aboutme-icons > i{
-  border: solid transparent;
-  color: #97dbd1;
-  cursor: pointer;
-  margin: 5px;
-  padding: 10px;
-}
-
-.aboutme-icons > a > i{
+i{
+  background: black;
   border-radius: 50%;
-  color: #97dbd1;
-  margin: 5px;
-  padding: 10px 12px;
+  color: #e3e3e3;
+  margin: 0 10px;
+  padding: 13px 14px;
+  text-align: center;
 }
 
-.aboutme-icons > i:hover{
+i:hover{
+  background: #fcfcfc;
+  color: #b7dee5;
+  transition: linear 0.3s;
+}
+
+p{
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+}
+
+/* NOTE: Id's */
+#ZH{
+  /* This is not an icon, but I want the properties of an icon*/
+  background: #151926;
+  border-radius: 50%;
+  color: #e3e3e3;
+  margin: 0 10px;
+  padding: 13px;
+  text-align: center;
+  text-decoration: none;
+}
+
+#ZH-intro{
+  background: rgba(255,255,255,0.5);
+  color: white;
+  position: relative;
+    top: 10vh;
+  /*width: 47%;*/
+}
+
+#skills{
+  margin-bottom: 7.5vh;
+}
+
+#js-fa-up{
+  /* This is not an icon, but I want the properties of an icon*/
+  background: red;
+  border: none;
+  border-radius: 50%;
+  color: #e3e3e3;
+  display: none;
+  margin: 0 10px;
+  outline: none;
+  padding: 13px 19px;
+  position: fixed;
+    bottom: 7.2vh;
+    right: 3.6vw;
+  text-align: center;
+  text-decoration: none;
+  z-index: 99;
+}
+
+#js-fa-up:hover{
+  background: #e3e3e3;
+  color: white;
+  transition: linear 0.3s;
+}
+
+#brewdoback{
+  background-image: url("svg/brewdo1.png");
+}
+
+#battery{
+  padding: 13px;
+}
+
+#memo{
+  color: #b2adad;
+  font-size: 10px;
+  font-style: italic;
+  line-height: 1.3;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+/* NOTE: Encompassing classes */
+.test-b{
+  border: solid red;
+}
+
+.base{
+  /* Container */
+  box-sizing: border-box;
+  padding: 0 5vmin;
+}
+
+.inlineLink{
+  color: grey;
+  text-decoration: none;
+}
+
+a.link{
+  color: #e3e3e3;
+  font-size: 13px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.link{
+  color: #e3e3e3;
+  font-size: 13px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+a.link:hover{
+  color: #b7dee5;
+  text-decoration: none;
+  transition: linear 0.2s;
+}
+.link:hover{
+  color: #b7dee5;
+  text-decoration: none;
+  transition: linear 0.2s;
+}
+
+.lowOpacity{
+  color: #e3e3e3;
+  opacity: 0.3;
+}
+
+.flex-rc{
+  align-items: center;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.flex-cc{
+  align-items: center;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+.flex-rca{
+  align-items: flex-start;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.css-menu{
+  display:none;
+}
+
+.notjumbotron{
+  background: white;
+  width: 100%;
+}
+
+.ribbon{
+  background: black;
+  padding: 3.6vh 0;
+  width: 100%;
+}
+
+.subcontent{
+  border-bottom: 1px solid #e5e5e5;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  position: relative;
+}
+
+.text{
+  width: 100%;
+}
+
+.title{
+  border-bottom: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* NOTE: Navigation specific */
+.flex-rc-nav_j{
+  justify-content: space-between;
+}
+
+.links-nav > a{
+  margin: 0 2px;
+  padding: 3.8vh 8px;
+}
+
+.links-nav > a:hover{
   border-bottom: solid white;
   transition: 0.4s;
 }
 
-.aboutme-icons > a > i:hover{
-  background-color: white;
-  transition: 0.4s;
+.ribbon-head{
+  top: 0;
+  z-index: 2;
 }
 
-a > strong{
-  color: #aebfbc;
-}
-
-a > strong:hover{
-  color: #97dbd1;
-  transition: 0.4s;
-}
-
-/*skills*/
-.c-skills{
-  box-sizing: border-box;
-  display: flex;
-    align-items: center;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-  padding: 0 6.7vw 0 6.6vw;
-}
-
-#skills-sub {
-  max-width: 100%;
-}
-
-.c-skills:hover .c-skills_cat {
-    opacity: .25;
-}
-.c-skills .c-skills_cat:hover {
-    opacity: 1;
-}
-
-.c-skills_cat{
-  /*border: solid pink;*/
-  padding-top: 21px;
-  margin-bottom: 2.6%;
-}
-
-.c-skills_logos{
-  /*border: solid red;*/
-  box-sizing: border-box;
-}
-
-.c-skills_logos > img{
-  /*border: solid black;*/
-}
-
-.skills-notes{
-  font-style: italic;
-  text-align: center;
-}
-
-.skills-logo{
-  margin: 0;
-  max-height: 50px;
-  max-width: 50px;
-}
-
-#frontend{
-  display: grid;
-    align-content: center;
-    grid-template-columns: repeat(2, 56px);
-    grid-template-rows: repeat(2, 56px);
-    grid-gap: 5px;
-    justify-content: center;
-}
-
-.html{
-  grid-column: 1;
-  grid-row: 1;
-}
-
-.css{
-  grid-column: 2;
-  grid-row: 1;
-  padding: 0 7.8px;
-}
-
-.js{
-  grid-column: 1;
-  grid-row: 2;
-}
-
-.boots{
-  grid-column: 2;
-  grid-row: 2;
-}
-
-#fullstack{
-  display: grid;
-    align-content: center;
-    grid-template-columns: repeat(15, 5px);
-    grid-template-rows: repeat(3, 27px);
-    grid-gap: 7px;
-    justify-content: center;
-  padding: 18px 7vw 3px 6vw;
-}
-
-.nodejs, .mongodb, .rails{
-  max-width: 155%;
-}
-
-.psql{
-  grid-column: 6/7;
-  grid-row: 1;
-  position: relative;
-    bottom: 7px;
-    left: 5px;
-}
-
-.nodejs{
-  grid-column: 1/5;
-  grid-row: 2;
-}
-
-.mongodb{
-  grid-column: 6/7;
-  grid-row: 3;
-  max-width: 86px;
-  position: relative;
-    right: 12px;
-}
-
-.rails{
-  grid-column: 11/15;
-  grid-row: 2;
-}
-
-#bioinf{
-  display: flex;
-    align-items: center;
-    flex-flow: column nowrap;
-    justify-content: center;
-  padding-bottom: 11.7px;
-}
-
-.geneious, .gromacs, .pymol{
-  max-width: 90px;
-}
-
-.geneious{
-  padding-right: 6px;
-}
-
-.gromacs{
-  padding-left: 16px;
-  margin-bottom: 3px;
-}
-
-.pymol{
-  max-height: 23px;
-}
-
-
-/* NOTE: Footer */
-.c-footer{
-  display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-  opacity: 0.85;
+/* NOTE: Footer specific */
+.ribbon-foot{
+  bottom: 0;
   position: fixed;
-    bottom: 0;
-    left: 3.1vw;
-  width: 100%;
+  z-index: 2;
 }
 
-footer > p {
-  color: #7f7c7b;
-  font-size: 16px;
-  margin: 0 3vw 3vh 0;
+.ribbon-foot > div > p{
+  margin-right: 3vw;
+}
+.flex-rc-foot_j{
+  justify-content: flex-start;
 }
 
-footer > p:hover {
-  color: #12073a;
-  transition: linear 1s;
+/* NOTE: Main specific */
+/* Top section*/
+.parallax-topsection{
+  background-attachment: fixed;
+  background-image: url("http://pymol.sourceforge.net/pmimag/800/virus3600.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 42vh;
+  margin-bottom: 0.8vh;
 }
 
+/* Bottom section */
+/* LEFT About*/
+.base-aboutL{
+  margin: 50px auto 100px;
+  flex: 1;
+}
 
-/* NOTE: Animated email */
+.base-aboutL > div{
+  margin: 4vh 3vw;
+  min-width: 300px;
+}
+
+.i-aboutme{
+  display: none;
+}
+
+/* RIGHT Portfolio */
+.base-aboutR{
+  border-left: solid #e3e3e3 1px;
+  /*height: 580px;*/
+  margin: 50px auto 100px;
+  /*overflow: hidden;*/
+  flex: 1;
+}
+
+.base-aboutR > div{
+  margin: 4vh 3vw;
+  position: relative;
+}
+
+.base-arrows{
+  margin: 11px 0;
+}
+
+.base-arrows > i {
+  margin-right: 25px;
+}
+
+.base-arrows > a {
+  margin-right: 3vw;
+}
+
+.placeholder {
+  background: #e3e3e3;
+  /*background-position: center;*/
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: solid black 8px;
+  margin: 0 auto 25px;
+  height: 35vmin;
+  max-height: 300px;
+  width: 35vmin;
+  max-width: 300px;
+}
+
+.flex-i{
+  align-items: center;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  position: relative;
+}
+
+/* Contact me */
+.base-contact{
+  border-top: solid #e3e3e3 1px;
+  border-bottom: solid #e3e3e3 1px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.base-contact > div{
+  padding-top: 14px;
+}
+
 .css-email{
   background-color: transparent;
   cursor: pointer;
@@ -348,187 +334,167 @@ footer > p:hover {
   padding-left: 1.4vmin;
 }
 
-.active{
-  border-bottom: solid #97dbd1 1px;
-  padding-bottom: 3px;
+.css-email:hover{
+  background: transparent;
+  border: none;
+  border-bottom: solid  #b7dee5;
+  border-radius: 0;
+  transition: 0s;
 }
 
-/* NOTE: TABLET */
-@media screen and (max-width: 768px){
-  body{
-    overflow: scroll;
+.css-envelope:hover{
+  background: transparent;
+  border: none;
+  border-bottom: solid #b7dee5;
+  border-radius: 0;
+}
+
+/* Skills */
+.base-skills{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.base-skills > .base-skills{
+  padding-top: 15px;
+  padding-bottom: 0;
+}
+
+.base-skills > .base-subskills {
+  padding: 25px 50px;
+}
+
+.base-subskills{
+  border-radius: 10px;
+  flex: 1;
+  font-style: italic;
+  margin: 0 10px;
+}
+
+.base-subskills > a{
+  color: #625b66;
+}
+
+/* select one over the others effect*/
+.base-skills:hover .base-subskills {
+    opacity: .25;
+    transition: 0.3s;
+}
+
+.base-skills .base-subskills:hover {
+    color: black;
+    border: solid #e3e3e3 1px;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+/* NOTE: Large laptop screen */
+@media screen and (min-width: 1000px){
+  /* About */
+  .i-aboutme{
+    display: inline;
+    float: right;
+    margin: 2px 0 2px 20px;
+  }
+}
+
+@media screen and (min-width: 769px){
+  .text{
+    width: 86%;
   }
 
-  .active{
-    border-bottom: transparent;
+}
+
+/* NOTE: Mobile screen */
+@media screen and (max-width: 692px){
+  /* navigation is fixed ?*/
+  /* mobile menu */
+  #ZH{
+    display: none;
   }
 
-  #portfolio{
-    margin-bottom: 13vh;
+
+  .links-nav > a:not(:first-child){
+    display: none;
   }
 
-  .c-footer{
+  .links-nav > a{
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .links-nav > a:hover{
+    border: none;
+  }
+
+  .css-menu{
+    background: #e3e3e3;
+    color: black;
+    display: block;
+    float: right;
+    opacity: 0.4;
+    outline: none;
+  }
+
+  .css-menu:hover{
+    background: transparent;
+    border: none;
+  }
+
+  .links-nav.active{
     display: flex;
-      align-items: flex-start;
-      flex-flow: column nowrap;
-      margin-bottom: 11vh;
+    align-items: flex-end;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    transition: ease-out 0.3s;
+  }
+
+  .links-nav.active > a{
+    display: inline;
+    padding-right: 22px;
+    text-align: right;
+    transition: ease-out 0.3s;
+  }
+
+  /* about */
+  .flex-media_about{
+    align-items: center;
+    flex-flow: column nowrap;
+    justify-content: center;
+  }
+
+  .base-aboutL{
+    margin-bottom: 0px;
+  }
+
+  .base-aboutR{
+    margin-bottom: 50px;
+  }
+
+  .placeholder{
+    height: 70vmin;
+    width: 70vmin;
+  }
+
+  /* contact me */
+  .base-contact{
+    background: #e3e3e3;
+  }
+
+  /* skills */
+  #skills{
+    margin-bottom: 4.5vh;
+  }
+
+  .flex-media_skills{
+    align-items: center;
+    flex-flow: column nowrap;
+    justify-content: center;
+  }
+
+  /* footer is not fixed */
+  .ribbon-foot{
     position: static;
   }
 
-  .c-footer > p{
-    color: #97dbd1;
-    margin: 10px;
-  }
-
-}
-
-/* NOTE: MOBILE */
-@media screen and (max-width: 425px) {
-    body {
-      overflow: scroll;
-    }
-
-    #intro, #aboutme, #skills, #portfolio{
-      margin-bottom: 0;
-    }
-
-/*navigation*/
-    .c-nav{
-      background-color: rgba(151, 219, 209, 0.85);
-      margin: 0;
-      padding: 0;
-      position: fixed;
-        top: 0;
-      width: 100%;
-    }
-
-    .ul-nav li:not(:first-child){
-      display: none;
-    }
-/*top-section*/
-    .s-for_mobile{
-      display: block;
-      float: right;
-    }
-
-/*bottom-section*/
-    #bottom-section{
-      border-bottom: solid rgba(226, 226, 226, 0.85) 1.2px;
-      padding: 1vh 1vw 4.41vh;
-    }
-
-    .c-art{
-      padding: 0;
-      margin: 2.2vh auto;
-    }
-
-/*about me*/
-    .css-email:after{
-    font-size: 11px;
-    }
-
-/*skills*/
-    #skills-sub{
-      border: dotted rgba(151, 219, 209, 0.2);
-      padding: 0 2.6vw;
-    }
-
-    .c-skills{
-      display: flex;
-        align-items: center;
-        flex-flow: column nowrap;
-        justify-content: center;
-      margin: 8.5vh auto 1.5vh;
-      padding: 0;
-    }
-
-    .c-skills_cat{
-      border-top: solid white 0.6px;
-      padding-top: 50px;
-      width: 100%;
-    }
-
-    .c-skills_cat > p{
-      margin: 40px auto;
-      color: grey;
-    }
-
-    .pymol{
-      max-height: 4.4vh;
-    }
-
-/*portfolio*/
-  #portfolio{
-    margin-bottom: 1vh;
-  }
-
-/*footer*/
-    .c-footer{
-      display: flex;
-        align-items: center;
-        flex-flow: column nowrap;
-      margin: 3.41vh 0 7vh;
-      position: relative;
-      width: 100%;
-    }
-
-    .c-footer > p{
-      color: #97dbd1;
-      margin: 7.7px;
-    }
-
-}
-
-/* NOTE: Main specific */
-.topsection-wrap{
-  height: 40vh;
-}
-
-#ZH-intro{
-  background: rgba(255,255,255,0.5);
-  color: white;
-  position: relative;
-    top: 10vh;
-  width: 47%;
-}
-
-.topsection-parallax{
-  background-attachment: fixed;
-  background-image: url("http://pymol.sourceforge.net/pmimag/800/virus3600.jpg");
-  background-position: left;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.bottomsection-flex{
-  align-items: flex-start;
-  flex-flow: row nowrap;
-  justify-content: center;
-}
-
-/* Left */
-#left-subsection{
-  border-right: solid black 1px;
-}
-
-/* Right */
-#right-subsection{
-  border-left: solid black 1px;
-}
-
-/* NOTE: Footer specific */
-.foot-rib{
-  position: fixed;
-    bottom: 0;
-  width: 100%;
-}
-
-.foot-flex{
-  align-items: center;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-}
-
-.foot-paragraphs > p{
-  padding: 0 10px;
 }

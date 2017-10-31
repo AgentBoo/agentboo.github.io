@@ -9,27 +9,62 @@ envelope.addEventListener("click", function(ev){
 	}
 })
 
-// NOTE: Pretending I am serving multiple pages and making the nav bar 'reflect that'
-const navLi = document.querySelectorAll("#menu-nav li a");
+// NOTE: Top button
+// Tutorial at: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+// When the user scrolls down 20px from the top of the document, show the button
+const topIcon = document.getElementById("js-fa-up");
+window.onscroll = function(){scrollFn()};
 
-navLi.forEach(function(li){
-	li.addEventListener("click", function(ev){
-  	navLi.forEach(function(link){
-    	link.classList.remove("active");
-    });
-    this.classList.add("active");
-  });
+function scrollFn() {
+    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+				console.log('A')
+        topIcon.style.display = "block";
+    } else {
+				console.log('B')
+        topIcon.style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+topIcon.addEventListener("click", function(icon){
+		console.log('C')
+		document.body.scrollTop = 0; // For Chrome, Safari and Opera
+		document.documentElement.scrollTop = 0; // For IE and Firefox
 })
 
-// NOTE: Responsive menu bar
-const nav = document.getElementById('menu-nav');
-const bars = document.getElementById('menu-bars');
 
-bars.addEventListener('click', function(ev){
-	if (nav.className === "ul-nav"){
-		nav.classList.remove('ul-nav')
-		nav.classList.add('bars-nav');
+// NOTE: Menu bars
+// Based on this tutorial: https://www.w3schools.com/howto/howto_js_accordion.asp
+const bars = document.querySelector("#js-fa-bars");
+const nav = document.querySelector(".links-nav");
+
+bars.addEventListener("click", function(bars){
+	console.log('D')
+	nav.classList.toggle("active")
+
+})
+
+// NOTE: Page jumps within #portfolio
+const btn = document.getElementById("btn")
+console.log(btn)
+const honey = document.getElementById("honeybadgers")
+console.log(honey)
+
+btn.addEventListener("click", function(clickEvent) {
+    let container = document.getElementById("portfolio");
+		let target = document.getElementById("honeybadgers");
+		console.log(target.offsetTop);
+		container.scrollTop = 518;
+		container.style.background = "red";
+});
+
+// NOTE: Memo works as an accordion
+const flask = document.getElementById("js-fa-flask");
+flask.addEventListener("click", function(flask){
+	const memo = document.getElementById("memo");
+	if (memo.style.maxHeight){
+		memo.style.maxHeight = null;
 	} else {
-		nav.className = 'ul-nav'
+		memo.style.maxHeight = memo.scrollHeight + "px";
 	}
 })
