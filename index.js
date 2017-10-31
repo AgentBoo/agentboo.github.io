@@ -45,18 +45,7 @@ bars.addEventListener("click", function(bars){
 })
 
 // NOTE: Page jumps within #portfolio
-const btn = document.getElementById("btn")
-console.log(btn)
-const honey = document.getElementById("honeybadgers")
-console.log(honey)
 
-btn.addEventListener("click", function(clickEvent) {
-    let container = document.getElementById("portfolio");
-		let target = document.getElementById("honeybadgers");
-		console.log(target.offsetTop);
-		container.scrollTop = 518;
-		container.style.background = "red";
-});
 
 // NOTE: Memo works as an accordion
 const flask = document.getElementById("js-fa-flask");
