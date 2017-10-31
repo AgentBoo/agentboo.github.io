@@ -1,0 +1,503 @@
+/* NOTE: Encompassing */
+body{
+  background: #e0dbdb;
+  box-sizing: border-box;
+  font-family: 'Helvetica', sans-serif;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5{
+  margin: 0 auto;
+  padding: 0 auto;
+  text-align: center;
+}
+
+a{
+  margin: 0;
+  padding: 0;
+}
+
+i{
+  background: black;
+  border-radius: 50%;
+  color: #e3e3e3;
+  margin: 0 10px;
+  padding: 13px 14px;
+  text-align: center;
+}
+
+i:hover{
+  background: #fcfcfc;
+  color: #b7dee5;
+  transition: linear 0.3s;
+}
+
+p{
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+}
+
+/* NOTE: Id's */
+#ZH{
+  /* This is not an icon, but I want the properties of an icon*/
+  background: #151926;
+  border-radius: 50%;
+  color: #e3e3e3;
+  margin: 0 10px;
+  padding: 13px;
+  text-align: center;
+  text-decoration: none;
+}
+
+#ZH-intro{
+  background: rgba(255,255,255,0.5);
+  color: white;
+  position: relative;
+    top: 10vh;
+  /*width: 47%;*/
+}
+
+#skills{
+  margin-bottom: 7.5vh;
+}
+
+#js-fa-up{
+  /* This is not an icon, but I want the properties of an icon*/
+  background: red;
+  border: none;
+  border-radius: 50%;
+  color: #e3e3e3;
+  display: none;
+  margin: 0 10px;
+  outline: none;
+  padding: 13px 19px;
+  position: fixed;
+    bottom: 7.2vh;
+    right: 3.6vw;
+  text-align: center;
+  text-decoration: none;
+  z-index: 99;
+}
+
+#js-fa-up:hover{
+  background: #e3e3e3;
+  color: white;
+  transition: linear 0.3s;
+}
+
+#brewdoback{
+  background-image: url("svg/brewdo1.png");
+}
+
+#battery{
+  padding: 13px;
+}
+
+#memo{
+  color: #b2adad;
+  font-size: 10px;
+  font-style: italic;
+  line-height: 1.3;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+/* NOTE: Encompassing classes */
+.test-b{
+  border: solid red;
+}
+
+.base{
+  /* Container */
+  box-sizing: border-box;
+  padding: 0 5vmin;
+}
+
+.inlineLink{
+  color: grey;
+  text-decoration: none;
+}
+
+a.link{
+  color: #e3e3e3;
+  font-size: 13px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.link{
+  color: #e3e3e3;
+  font-size: 13px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+a.link:hover{
+  color: #b7dee5;
+  text-decoration: none;
+  transition: linear 0.2s;
+}
+.link:hover{
+  color: #b7dee5;
+  text-decoration: none;
+  transition: linear 0.2s;
+}
+
+.lowOpacity{
+  color: #e3e3e3;
+  opacity: 0.3;
+}
+
+.flex{
+  display: flex;
+}
+.flex-rc{
+  align-items: center;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.flex-cc{
+  align-items: center;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+.flex-rca{
+  align-items: flex-start;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.css-menu{
+  display:none;
+}
+
+.notjumbotron{
+  background: white;
+  width: 100%;
+}
+
+.ribbon{
+  background: black;
+  padding: 3.6vh 0;
+  width: 100%;
+}
+
+.subcontent{
+  border-bottom: 1px solid #e5e5e5;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  position: relative;
+}
+
+.text{
+  width: 100%;
+}
+
+.title{
+  border-bottom: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* NOTE: Navigation specific */
+.flex-rc-nav_j{
+  justify-content: space-between;
+}
+
+.links-nav > a{
+  margin: 0 2px;
+  padding: 3.8vh 8px;
+}
+
+.links-nav > a:hover{
+  border-bottom: solid white;
+}
+
+.ribbon-head{
+  top: 0;
+  z-index: 2;
+}
+
+/* NOTE: Footer specific */
+.ribbon-foot{
+  bottom: 0;
+  position: fixed;
+  z-index: 2;
+}
+
+.ribbon-foot > div > p{
+  margin-right: 3vw;
+}
+.flex-rc-foot_j{
+  justify-content: flex-start;
+}
+
+/* NOTE: Main specific */
+/* Top section*/
+.parallax-topsection{
+  background-attachment: fixed;
+  background-image: url("http://pymol.sourceforge.net/pmimag/800/virus3600.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 42vh;
+  margin-bottom: 0.8vh;
+}
+
+/* Bottom section */
+/* LEFT About*/
+.base-aboutL{
+  margin: 50px auto 100px;
+  flex: 1;
+}
+
+.base-aboutL > div{
+  margin: 4vh 3vw;
+  min-width: 300px;
+}
+
+.i-aboutme{
+  display: none;
+}
+
+/* RIGHT Portfolio */
+.base-aboutR{
+  border-left: solid #e3e3e3 1px;
+  /*height: 580px;*/
+  margin: 50px auto 100px;
+  /*overflow: hidden;*/
+  flex: 1;
+}
+
+.base-aboutR > div{
+  margin: 4vh 3vw;
+  position: relative;
+}
+
+.base-arrows{
+  margin: 11px 0;
+}
+
+.base-arrows > i {
+  margin-right: 25px;
+}
+
+.base-arrows > a {
+  margin-right: 3vw;
+}
+
+.placeholder {
+  background: #e3e3e3;
+  /*background-position: center;*/
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: solid black 8px;
+  margin: 0 auto 25px;
+  height: 35vmin;
+  max-height: 300px;
+  width: 35vmin;
+  max-width: 300px;
+}
+
+.flex-i{
+  align-items: center;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  position: relative;
+}
+
+/* Contact me */
+.base-contact{
+  border-top: solid #e3e3e3 1px;
+  border-bottom: solid #e3e3e3 1px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.base-contact > div{
+  padding-top: 14px;
+}
+
+.css-email{
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.css-email:after{
+  content: "hanova.dung@gmail.com";
+  color: #7f7c7b;
+  font-family: 'Source Sans Pro', Courier, sans-serif;
+  font-size: 16px;
+  padding-left: 1.4vmin;
+}
+
+.css-email:hover{
+  background: transparent;
+  border: none;
+  border-bottom: solid  #b7dee5;
+  border-radius: 0;
+  transition: 0s;
+}
+
+.css-envelope:hover{
+  background: transparent;
+  border: none;
+  border-bottom: solid #b7dee5;
+  border-radius: 0;
+}
+
+/* Skills */
+.base-skills{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.base-skills > .base-skills{
+  padding-top: 15px;
+  padding-bottom: 0;
+}
+
+.base-skills > .base-subskills {
+  padding: 25px 50px;
+}
+
+.base-subskills{
+  border-radius: 10px;
+  flex: 1;
+  font-style: italic;
+  margin: 0 10px;
+}
+
+.base-subskills > a{
+  color: #625b66;
+}
+
+/* select one over the others effect*/
+.base-skills:hover .base-subskills {
+    opacity: .25;
+    transition: 0.3s;
+}
+
+.base-skills .base-subskills:hover {
+    color: black;
+    border: solid #e3e3e3 1px;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+/* NOTE: Large laptop screen */
+@media screen and (min-width: 1000px){
+  /* About */
+  .i-aboutme{
+    display: inline;
+    float: right;
+    margin: 2px 0 2px 20px;
+  }
+}
+
+@media screen and (min-width: 769px){
+  .text{
+    width: 86%;
+  }
+
+}
+
+/* NOTE: Mobile screen */
+@media screen and (max-width: 692px){
+  /* navigation is fixed ?*/
+  /* mobile menu */
+  #ZH{
+    display: none;
+  }
+
+
+  .links-nav > a:not(:first-child){
+    display: none;
+  }
+
+  .links-nav > a{
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .links-nav > a:hover{
+    border: none;
+  }
+
+  .css-menu{
+    background: #e3e3e3;
+    color: black;
+    display: block;
+    float: right;
+    opacity: 0.4;
+    outline: none;
+  }
+
+  .css-menu:hover{
+    background: transparent;
+    border: none;
+  }
+
+  .links-nav.active{
+    display: flex;
+    align-items: flex-end;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    transition: ease-out 0.3s;
+  }
+
+  .links-nav.active > a{
+    display: inline;
+    padding-right: 22px;
+    text-align: right;
+    transition: ease-out 0.3s;
+  }
+
+  /* about */
+  .flex-media_about{
+    align-items: center;
+    flex-flow: column nowrap;
+    justify-content: center;
+  }
+
+  .base-aboutL{
+    margin-bottom: 0px;
+  }
+
+  .base-aboutR{
+    margin-bottom: 50px;
+  }
+
+  .placeholder{
+    height: 70vmin;
+    width: 70vmin;
+  }
+
+  /* contact me */
+  .base-contact{
+    background: #e3e3e3;
+  }
+
+  /* skills */
+  #skills{
+    margin-bottom: 4.5vh;
+  }
+
+  .flex-media_skills{
+    align-items: center;
+    flex-flow: column nowrap;
+    justify-content: center;
+  }
+
+  /* footer is not fixed */
+  .ribbon-foot{
+    position: static;
+  }
+
+}
