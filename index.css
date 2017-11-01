@@ -67,7 +67,7 @@ p{
 }
 
 #js-fa-up{
-  /* This is not an icon, but I want the properties of an icon*/
+  /* This is kind of a button/icon */
   background: red;
   border: none;
   border-radius: 50%;
@@ -83,15 +83,29 @@ p{
   text-decoration: none;
   z-index: 99;
 }
-
 #js-fa-up:hover{
-  background: #e3e3e3;
-  color: white;
-  transition: linear 0.3s;
+  background: red;
+  color: #e3e3e3;
+}
+
+/* NOTE: Portfolio items */
+#brewdo{
 }
 
 #brewdoback{
   background-image: url("svg/brewdo1.png");
+}
+
+#honeybadgers{
+}
+
+#notreddit{
+}
+
+#todo{
+}
+
+#pottery{
 }
 
 #battery{
@@ -182,6 +196,10 @@ a.link:hover{
   width: 100%;
 }
 
+.notDisplayed{
+  display: none;
+}
+
 .ribbon{
   background: black;
   padding: 3.6vh 0;
@@ -242,7 +260,7 @@ a.link:hover{
 /* Top section*/
 .parallax-topsection{
   background-attachment: fixed;
-  background-image: url("http://pymol.sourceforge.net/pmimag/800/virus3600.jpg");
+  /*background-image: url("http://pymol.sourceforge.net/pmimag/800/virus3600.jpg");*/
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -253,6 +271,7 @@ a.link:hover{
 /* Bottom section */
 /* LEFT About*/
 .base-aboutL{
+  border-right: solid #e3e3e3 1px;
   margin: 50px auto 100px;
   flex: 1;
 }
@@ -268,8 +287,8 @@ a.link:hover{
 
 /* RIGHT Portfolio */
 .base-aboutR{
-  border-left: solid #e3e3e3 1px;
-  /*height: 580px;*/
+  /*border-left: solid #e3e3e3 1px;*/
+  height: 79vh;
   margin: 50px auto 100px;
   /*overflow: hidden;*/
   flex: 1;
@@ -482,7 +501,7 @@ a.link:hover{
   /* contact me */
   .base-contact{
     background: #e3e3e3;
-  }
+
 
   /* skills */
   #skills{
