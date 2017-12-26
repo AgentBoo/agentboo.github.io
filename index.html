@@ -20,7 +20,7 @@
         <div class="base flex flex-rc flex-rc-nav_j flex-media-nav">
           <!-- Logo - home -->
           <div class="">
-            <a id="ZH" class="" href="https://agentboo.github.io/"> ZH </a>
+            <a class="ZH-link" href="https://agentboo.github.io/"> ZH </a>
           </div>
           <!-- The rest of the navlinks -->
           <div id="links-nav" class="links-nav">
@@ -40,12 +40,8 @@
     <main>
       <!-- Top section has the parallax -->
       <section id="topsection" class="notjumbotron base parallax-topsection">
-        <p class="" id="ZH-intro">
-          The molecule behind me is a temporary placeholder.
-          I am currently rendering my own view of a different molecule, in case I was violating publication laws with this current molecule =/
-          <br>
-          (Source: http://mmg-233-2013-genetics-genomics.wikia.com/wiki/File:Aav_Adeno-Associated_virus_vmd_from_virology_wisc_edu.jpg)
-        </p>
+        <div id="particles-js"></div>
+        <p class="notice"><strong>Hi, my name is Zuzka, and I am a web developer and biochemist</strong></p>
       </section>
 
       <!-- Bottom section has everything else -->
@@ -109,7 +105,7 @@
                   <p class="title"> Actively trying to learn </p>
                   <p>
                     <!-- <s>K-pop</s> Sour patch kids and ginger ale. -->
-                    React, Particle.js
+                    React.js, Django, Anvil.works
                    </p>
                 </div>
               </div>
@@ -125,7 +121,7 @@
               <div id="brewdo" class="subcontent text js-hook">
                 <!-- placeholder box -->
                 <a href="http://brewdo.herokuapp.com/" target="_blank">
-                  <div id="brewdoback" class="placeholder base-portfolio"></div>
+                  <div class="placeholder base-portfolio"></div>
                 </a>
                 <p class="title"> BrewDo </p>
                 <p class="">
@@ -222,23 +218,23 @@
           <div class="flex flex-rca flex-media_skills base base-skills">
             <div class="flex flex-cc base-subskills">
               <h5> front end </h5>
-              <a class="link hidden" href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" target="_blank"> HTML5 </a>
-              <a class="link hidden" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3" target="_blank"> CSS3 </a>
-              <a class="link hidden" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> ES6 </a>
-              <a class="link hidden" href="https://getbootstrap.com/" target="_blank"> Bootstrap </a>
+              <a class="link sk-ice hidden" href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" target="_blank"> HTML5 </a>
+              <a class="link sk-ice hidden" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3" target="_blank"> CSS3 </a>
+              <a class="link sk-ice hidden" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> ES6 </a>
+              <a class="link sk-ice hidden" href="https://getbootstrap.com/" target="_blank"> Bootstrap </a>
             </div>
             <div class="flex flex-cc base-subskills">
               <h5> back end </h5>
-              <a class="link hidden" href="https://nodejs.org/en/about/" target="_blank"> Node.js </a>
-              <a class="link hidden" href="http://rubyonrails.org/" target="_blank"> Ruby on Rails </a>
-              <a class="link hidden" href="https://www.mongodb.com/what-is-mongodb" target="_blank"> MongoDB </a>
-              <a class="link hidden" href="https://www.postgresql.org/about/" target="_blank"> PostgreSQL </a>
+              <a class="link sk-ice hidden" href="https://nodejs.org/en/about/" target="_blank"> Node.js </a>
+              <a class="link sk-ice hidden" href="http://rubyonrails.org/" target="_blank"> Ruby on Rails </a>
+              <a class="link sk-ice hidden" href="https://www.mongodb.com/what-is-mongodb" target="_blank"> MongoDB </a>
+              <a class="link sk-ice hidden" href="https://www.postgresql.org/about/" target="_blank"> PostgreSQL </a>
             </div>
             <div class="flex flex-cc base-subskills">
               <h5> bioinformatics </h5>
-              <a class="link hidden" href="http://www.gromacs.org/About_Gromacs" target="_blank"> GROMACS </a>
-              <a class="link hidden" href="https://pymol.org/2/" target="_blank"> PyMOL </a>
-              <a class="link hidden" href="https://www.geneious.com/" target="_blank"> Geneious </a>
+              <a class="link sk-ice hidden" href="http://www.gromacs.org/About_Gromacs" target="_blank"> GROMACS </a>
+              <a class="link sk-ice hidden" href="https://pymol.org/2/" target="_blank"> PyMOL </a>
+              <a class="link sk-ice hidden" href="https://www.geneious.com/" target="_blank"> Geneious </a>
               <br>
             </div>
           </div>
@@ -257,6 +253,11 @@
     <!-- Scroll to top button -->
     <i id="js-fa-up" class="fa fa-long-arrow-up" aria-hidden="true" title="Go to Top"></i>
 
+    <!-- Events -->
     <script type="text/javascript" src="./index.js"></script>
+    <!-- pJS -->
+    <script type="text/javascript" src="./particles.js"></script>
+    <!-- pJS load -->
+    <script type="text/javascript" src="./pconfig.js"></script>
   </body>
 </html>
