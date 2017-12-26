@@ -513,7 +513,7 @@ a.sk-ice:hover{
 
   /* top section */
   .parallax-topsection{
-    background: rgba(221, 97, 74, 0.74);
+    background: rgba(221, 97, 74, 0.73);
   }
 
   /* about */
@@ -537,9 +537,10 @@ a.sk-ice:hover{
   }
 
   /* portfolio */
-  .subcontent{
+  .base-aboutR > div > .subcontent{
     border-bottom: none;
   }
+
   /* contact me */
   .base-contact{
     background: rgba(183, 222, 229, 0.3);
