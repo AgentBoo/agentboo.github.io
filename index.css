@@ -264,8 +264,8 @@ a.ZH-link{
 /* NOTE: Main specific */
 /* Top section*/
 .parallax-topsection{
-  /*background: transparent;*/
-  background: linear-gradient(179deg, rgba(162, 115, 104, 1), rgba(249, 248, 247, 1) 71%);
+  background: transparent;
+  /*background: linear-gradient(179deg, rgba(162, 115, 104, 1), rgba(249, 248, 247, 1) 71%);*/
   background-attachment: fixed;
   /*background-image: url("./svg/virus.jpg");*/
   background-position: right;
@@ -276,7 +276,6 @@ a.ZH-link{
 
 .notice{
   /*display: none;*/
-  content: 'You can click around to create more particles. The particles will not go away.'
   text-align: justify;
   font-style: italic;
   position: relative;
