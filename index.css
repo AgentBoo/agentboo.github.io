@@ -445,6 +445,10 @@ a.sk-ice:hover{
 }
 
 @media screen and (min-width: 769px){
+  body{
+    background: #a27368;
+  }
+
   .text{
     width: 86%;
   }
@@ -453,6 +457,9 @@ a.sk-ice:hover{
 
 /* NOTE: Mobile screen */
 @media screen and (max-width: 692px){
+  body{
+    background: #a27368;
+  }
   /* navigation is fixed ?*/
   /* mobile menu */
   .ZH-link{
@@ -506,7 +513,7 @@ a.sk-ice:hover{
 
   /* top section */
   .parallax-topsection{
-    background: #dd614a;
+    background: rgba(221, 97, 74, 0.74);
   }
 
   /* about */
@@ -549,7 +556,6 @@ a.sk-ice:hover{
 
   section > div > i{
     background: #a27368;
-    color: #dd614a;
   }
   /* skills */
   #skills{
