@@ -59,14 +59,14 @@ particlesJS('particles-js',
       },
       "line_linked": {
         "enable": true,
-        "distance": 160,
+        "distance": 150,
         "color": "#b7dee5",
-        "opacity": 0.4,
+        "opacity": 0.3,
         "width": 1
       },
       "move": {
         "enable": true,
-        "speed": 3,
+        "speed": 2,
         "direction": "none",
         "random": true,
         "straight": false,
@@ -107,8 +107,8 @@ particlesJS('particles-js',
           "speed": 3
         },
         "repulse": {
-          "distance": 60,
-          "duration": 0.7
+          "distance": 105,
+          "duration": 0.4
         },
         "push": {
           "particles_nb": 4
