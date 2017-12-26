@@ -525,10 +525,12 @@ a.sk-ice:hover{
 
   .base-aboutL{
     margin-bottom: 0px;
+    padding: 0 15px;
   }
 
   .base-aboutR{
     margin-bottom: 50px;
+    padding: 0 15px;
   }
 
   .placeholder{
