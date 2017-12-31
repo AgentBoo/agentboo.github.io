@@ -214,6 +214,16 @@ a.link:hover{
   font-weight: bold;
 }
 
+/* https://stackoverflow.com/questions/21003535/anyway-to-prevent-the-blue-highlighting-of-elements-in-chrome-when-clicking-quic */
+.disableSelect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 /* NOTE: Navigation specific */
 .flex-rc-nav_j{
   justify-content: space-between;
