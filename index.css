@@ -1,0 +1,589 @@
+/* NOTE: Encompassing */
+body{
+  background: #a27368;
+  box-sizing: border-box;
+  font-family: 'Helvetica', sans-serif;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5{
+  margin: 0 auto;
+  padding: 0 auto;
+  text-align: center;
+}
+
+a{
+  margin: 0;
+  padding: 0;
+}
+
+i{
+  background: #000000;
+  border-radius: 50%;
+  color: #f9f8f7;
+  margin: 0 10px;
+  padding: 13px 14px;
+  text-align: center;
+}
+
+i:hover{
+  background: white;
+  color: #b7dee5;
+  transition: linear 0.3s;
+}
+
+p{
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+}
+
+/* NOTE: Id's */
+#bottomsection{
+  background: #f9f8f7;
+}
+
+#skills{
+  margin-bottom: 7.5vh;
+}
+
+#js-fa-up{
+  /* This is kind of a button/icon */
+  background: #dd614a;
+  border: none;
+  border-radius: 50%;
+  color: #f9f8f7;
+  display: none;
+  margin: 0 10px;
+  outline: none;
+  padding: 13px 19px;
+  position: fixed;
+    bottom: 6.2vh;
+    right: 3.6vw;
+  text-align: center;
+  text-decoration: none;
+  z-index: 99;
+}
+#js-fa-up:hover{
+  background: #b7dee5;
+  color: #f9f8f7;
+}
+
+#particles-js{
+  height: 100%;
+  width: 100%;
+}
+
+
+/* NOTE: Portfolio items */
+#brewdo{
+}
+
+#honeybadgers{
+}
+
+#notreddit{
+}
+
+#todo{
+}
+
+#pottery{
+}
+
+#battery{
+  padding: 14px 15px;
+}
+
+#memo{
+  color: #ceb29a;
+  font-size: 10px;
+  font-style: italic;
+  line-height: 1.3;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+#js-fa-flask{
+  cursor: pointer;
+}
+
+/* NOTE: Encompassing classes */
+.test-b{
+  border: solid red;
+}
+
+.base{
+  /* Container */
+  box-sizing: border-box;
+  padding: 0 5vmin;
+}
+
+.inlineLink{
+  color: #ceb29a;
+  text-decoration: none;
+}
+
+.inlineLink:hover{
+  color: #b7dee5;
+  transition: linear 0.3s;
+}
+
+a.link{
+  color: #f9f8f7;
+  font-size: 13px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.link{
+  color: #f9f8f7;
+  font-size: 13px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+a.link:hover{
+  color: #a27368;
+  text-decoration: none;
+  transition: linear 0.3s;
+}
+.link:hover{
+  color: #a27368;
+  text-decoration: none;
+  transition: linear 0.3s;
+}
+
+.flex{
+  display: flex;
+}
+.flex-rc{
+  align-items: center;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.flex-cc{
+  align-items: center;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+.flex-rca{
+  align-items: flex-start;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.css-menu{
+  display:none;
+}
+
+.notjumbotron{
+  background: #f9f8f7;
+  width: 100%;
+}
+
+.notDisplayed{
+  display: none;
+}
+
+.ribbon{
+  background: #000000;
+  padding: 3.6vh 0;
+  width: 100%;
+}
+
+.subcontent{
+  border-bottom: 1px solid #e5e5e5;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  position: relative;
+}
+
+.text{
+  width: 100%;
+}
+
+.title{
+  border-bottom: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* https://stackoverflow.com/questions/21003535/anyway-to-prevent-the-blue-highlighting-of-elements-in-chrome-when-clicking-quic */
+.disableSelect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* NOTE: Navigation specific */
+.flex-rc-nav_j{
+  justify-content: space-between;
+}
+
+.links-nav > a{
+  margin: 0 2px;
+  padding: 3.8vh 8px;
+}
+
+.links-nav > a:hover{
+  border-bottom: solid #b7dee5;
+}
+
+.ribbon-head{
+  top: 0;
+  z-index: 2;
+}
+
+a.ZH-link{
+  /* This is not an icon, but I want the properties of an icon*/
+  background: #140e0e;
+  border-radius: 50%;
+  color: #a27368;
+  margin: 0 10px;
+  opacity: 0.9;
+  padding: 13px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* NOTE: Footer specific */
+.ribbon-foot{
+  bottom: 0;
+  border-top: solid #a27368 3px;
+  position: fixed;
+  z-index: 2;
+}
+
+.ribbon-foot > div > p{
+  margin-right: 3vw;
+}
+.flex-rc-foot_j{
+  justify-content: flex-start;
+}
+
+/* NOTE: Main specific */
+/* Top section*/
+.parallax-topsection{
+  background: transparent;
+  /*background: linear-gradient(179deg, rgba(162, 115, 104, 1), rgba(249, 248, 247, 1) 71%);*/
+  background-attachment: fixed;
+  /*background-image: url("./svg/virus.jpg");*/
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 59vh;
+}
+
+.notice{
+  /*display: none;*/
+  text-align: justify;
+  font-style: italic;
+  position: relative;
+    bottom: 12vh;
+  z-index: 100;
+}
+
+/* Bottom section */
+/* LEFT About*/
+.base-aboutL{
+  border-right: solid #e3e3e3 1px;
+  margin: 50px auto 100px;
+  flex: 1;
+}
+
+.base-aboutL > div{
+  margin: 4vh 3vw;
+  min-width: 300px;
+}
+
+.i-aboutme{
+  display: none;
+}
+
+/* RIGHT Portfolio */
+.base-aboutR{
+  /*border-left: solid #e3e3e3 1px;*/
+  height: 92vh;
+  margin: 50px auto 100px;
+  /*overflow: hidden;*/
+  flex: 1;
+}
+
+.base-aboutR > div{
+  margin: 4vh 3vw;
+  position: relative;
+}
+
+.base-arrows{
+  margin: 11px 0;
+}
+
+.base-arrows > i {
+  margin-right: 25px;
+}
+
+.base-arrows > a {
+  margin-right: 3vw;
+}
+
+.placeholder {
+  background: #dd614a;
+  /*background-position: center;*/
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: solid black 8px;
+  margin: 0 auto 25px;
+  height: 35vmin;
+  max-height: 300px;
+  width: 35vmin;
+  max-width: 300px;
+}
+
+.flex-i{
+  align-items: center;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  position: relative;
+}
+
+/* brewdo */
+#brewdo > a > div{
+  background-image: url("svg/brewdo1.png");
+}
+
+/* Contact me */
+.base-contact{
+  background: rgba(162, 115, 104, 0.28);
+  /*border-top: solid rgba(221, 97, 74, 0.4) 1px;*/
+  /*border-bottom: solid #b7dee5 1px;*/
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.base-contact > div{
+  padding-top: 14px;
+}
+
+.css-email{
+  background: transparent;
+  cursor: pointer;
+}
+
+.css-email:after{
+  content: "hanova.dung@gmail.com";
+  color: #625b66;
+  font-family: 'Source Sans Pro', Courier, sans-serif;
+  font-size: 16px;
+  padding-left: 1.4vmin;
+}
+
+.css-email:hover{
+  background: transparent;
+  border: none;
+  border-bottom: solid  #b7dee5;
+  border-radius: 0;
+  transition: 0s;
+}
+
+.css-envelope:hover{
+  background: transparent;
+  border: none;
+  border-bottom: solid #b7dee5;
+  border-radius: 0;
+}
+
+/* Skills */
+.base-skills{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.base-skills > .base-skills{
+  padding-top: 15px;
+  padding-bottom: 0;
+}
+
+.base-skills > .base-subskills {
+  padding: 25px 50px;
+}
+
+.base-subskills{
+  border-radius: 10px;
+  flex: 1;
+  font-style: italic;
+  margin: 0 10px;
+}
+
+.base-subskills > a{
+  color: #625b66;
+}
+
+a.sk-ice:hover{
+  color: #b7dee5;
+}
+
+/* select one over the others effect*/
+.base-skills:hover .base-subskills {
+    opacity: .25;
+    transition: 0.3s;
+}
+
+.base-skills .base-subskills:hover {
+    color: #000000;
+    border: solid #e3e3e3 1px;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+/* NOTE: Large laptop screen */
+@media screen and (min-width: 1000px){
+  /* About */
+  .i-aboutme{
+    display: inline;
+    float: right;
+    margin: 2px 0 2px 20px;
+  }
+}
+
+@media screen and (min-width: 769px){
+  body{
+    background: #a27368;
+  }
+
+  .text{
+    width: 86%;
+  }
+
+}
+
+/* NOTE: Mobile screen */
+@media screen and (max-width: 692px){
+  body{
+    background: #a27368;
+  }
+  /* navigation is fixed ?*/
+  /* mobile menu */
+  .ZH-link{
+    display: none;
+  }
+
+  .links-nav > a:not(:first-child){
+    display: none;
+  }
+
+  .links-nav > a{
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .links-nav > a:hover{
+    border: none;
+  }
+
+  .css-menu{
+    background: #140e0e;
+    color: #a27368;
+    display: block;
+    float: right;
+    margin-bottom: 10px;
+    outline: none;
+    opacity: 0.9;
+    font-weight: bold;
+  }
+
+  .css-menu:hover{
+    background: transparent;
+    color: #f9f8f7;
+    border: none;
+  }
+
+  .links-nav.active{
+    display: flex;
+    align-items: flex-end;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    transition: ease-out 0.3s;
+  }
+
+  .links-nav.active > a{
+    display: inline;
+    padding-right: 22px;
+    text-align: right;
+    transition: ease-out 0.3s;
+  }
+
+  /* top section */
+  .parallax-topsection{
+    background: rgba(221, 97, 74, 0.73);
+  }
+
+  /* about */
+  .flex-media_about{
+    align-items: center;
+    flex-flow: column nowrap;
+    justify-content: center;
+  }
+
+  .base-aboutL{
+    margin-bottom: 0px;
+    padding: 0 15px;
+  }
+
+  .base-aboutR{
+    margin-bottom: 50px;
+    padding: 0 15px;
+  }
+
+  .placeholder{
+    height: 70vmin;
+    width: 70vmin;
+  }
+
+  /* portfolio */
+  .base-aboutR > div > .subcontent{
+    border-bottom: none;
+  }
+
+  /* contact me */
+  .base-contact{
+    background: rgba(183, 222, 229, 0.3);
+    border: none;
+  }
+
+  .css-email:after{
+    color: #dd614a;
+  }
+
+  section > div > a > i{
+    background: #a27368;
+  }
+
+  section > div > i{
+    background: #a27368;
+  }
+  /* skills */
+  #skills{
+    margin-bottom: 8px;
+  }
+
+  .flex-media_skills{
+    align-items: center;
+    flex-flow: column nowrap;
+    justify-content: center;
+  }
+
+  /* footer is not fixed */
+  .ribbon-foot{
+    position: static;
+  }
+
+}
