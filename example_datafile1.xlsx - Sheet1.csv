@@ -1,0 +1,15 @@
+Donor ID,First Name,Last Name Address,City,State,zipcode,Lifetime Giving Amt,Last Gift Amount,Planned Gift,Number of Events attended,Job Type or Major in College depending on organization
+555444,Jim,Jones,New York,NY,,500000,25000,Y,6,
+321682,Bill,Pascal,Boston,MA,,100000,100,N,25,
+443568,John,Henry,Chicago,IL,,57050,7500,N,4,
+131456,Mary,Philips,Houston,TX,,42070,5000,N,2,
+883497,Sally,Hanson,Austin,TX,,1075,25,N,0,
+224983,Janice,Cartwright,Dallas,TX,,0,0,N,0,
+771834,Peter,Jackson,Seattle,WA,,100,50,N,1,
+375545,Paul,Stammford,Portland,OR,,1070000,10000,Y,3,
+877431,Sarah,Kissinger,West Lafayette,IN,,325000,325000,Y,17,
+907412,Samantha,Ford,Indianapolis,IN,,750,750,N,4,
+
+
+,"*Goal is to determine a ""propensity"" algorithm based on data patterns that consider inputs such as number of events attended, whether or not a planned ""lifetime"" gift was made already, historical giving amounts (would usually include last 5-10 years of available data)",,,,,,,,,
+,"*Other unstructured data such as ""contact reports"" will be needed as a database field type. This is text information that will likely require some NLP to parse out valueable information. Not sure if this should/can be done together or needs to be separate.",,,,,,,,,

@@ -1,0 +1,95 @@
+<!-- This is butchered React boilerplate -->
+<!-- Please use bootstrap boilerplate instead? -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- test and main css -->
+  <link rel="stylesheet" href="./standard.css">
+  <link rel="stylesheet" href="./login.css">
+
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  </head>
+
+  <body class="bodylogin_bg">
+
+    <!-- Top section -->
+    <section id="topsection" class="flex flex-crb">
+      <h1 id="propensity"> Propensity </h1>
+      <div class="grid grid-memo">
+        <p>
+          Sushi (すし, 寿司, 鮨) is the Japanese preparation and serving of
+          specially prepared vinegared rice (鮨飯 sushi-meshi) combined with
+          varied ingredients (ネタ neta) such as seafood (often uncooked),
+          vegetables, and occasionally tropical fruits. Styles of sushi and its
+          presentation vary widely, but the key ingredient is sushi rice, also
+          referred to as shari (しゃり), or sumeshi (酢飯).
+        </p>
+        <button id="loginScroll" type="button" class="btn"> Login </button>
+        <a href="#" class="link-s underline disabled"> Learn more </a>
+      </div>
+    <!-- end of top section -->
+    </section>
+
+<!-- ============================================================================ -->
+
+    <!-- Bottom section has login and signup form -->
+    <section id="bottomsection" class="flex flex-ccc">
+      <div class="login_ container-m">
+        <!-- Panel to select between login or signup form -->
+        <div class="panel flex flex-panel">
+          <button type="button" class="panselect login"> Log in </button>
+          <button type="button" class="panselect signup"> Sign up </button>
+        </div>
+
+        <!-- Login form -->
+        <div id="login" class="display container-auth">
+          <div class="">
+            <h1 class="h1-1"> Login </h1>
+            <p id="notice" class="title-m"> Please log in to get started </p>
+            <form id="form" class="" method="get" action="./index.html">
+              <input id="email" class="input-auth" type="text" placeholder="email">
+              <input id="password" class="input-auth" type="password" placeholder="password">
+              <input id="submitBtn" class="btn btn-w100" type="submit" value="Log in">
+            </form>
+          </div>
+
+          <div>
+            <a class="link-xxs"> Forgot password? </a>
+            <h5 class="h5-1"> Do not have an account? <a class="link-xxs"> Sign up! </a></h5>
+          </div>
+        <!-- end of login -->
+        </div>
+
+
+
+        <!-- Signup form -->
+        <div id="signup" class="container-auth">
+          <div class="">
+            <h1 class="h1-1"> Sign up </h1>
+            <p id="" class="title-m"> Please sign up to get started </p>
+            <form id="form" class="" method="get" action="./index.html">
+              <input id="email" class="input-auth" type="text" placeholder="email">
+              <input id="password" class="input-auth" type="text" placeholder="password">
+              <input id="passconfirm" class="input-auth" type="text" placeholder="password confirmation"></br>
+              <input id="submitBtn" class="btn btn-w100" type="submit" value="Submit"></br>
+            </form>
+          </div>
+          <div>
+            <h5 class="h5-1"> Experiencing problems? Contact support <a class="link-xxs"> here </a></h5>
+          </div>
+        <!-- end of signup -->
+        </div>
+      <!-- end of .login_ container for the forms -->
+      </div>
+
+    </section>
+
+    <script src="./login.js"></script>
+
+  </body>
+</html>

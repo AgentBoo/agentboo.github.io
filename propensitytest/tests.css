@@ -1,0 +1,16 @@
+#map{
+  background: rgb(252, 161, 125);
+  border-radius: 5px;
+  height: 500px;
+  margin: 30px auto;
+  width: 840px;
+}
+
+#kanban{
+  display: none;
+  border: solid #f4f4f4 1px;
+  background: linear-gradient(171deg, rgba(252, 161, 125, 0.1), #ffffff, rgba(220, 240, 250, 0.1));
+  height: 500px;
+  margin: 30px auto;
+  width: 100%;
+}

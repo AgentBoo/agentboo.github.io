@@ -1,0 +1,462 @@
+<!-- This is butchered React boilerplate -->
+<!-- Please use bootstrap boilerplate instead? -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- test and main css -->
+  <link rel="stylesheet" href="./standard.css">
+  <link rel="stylesheet" href="./users.css">
+  <link rel="stylesheet" href="./tests.css">
+
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- font awesome -->
+  <script src="https://use.fontawesome.com/43adbb1640.js"></script>
+
+  </head>
+
+  <!-- BODY -->
+  <body class="">
+
+    <!-- Header section -->
+    <header class="head">
+      <!-- Header top  -->
+      <section class="container-xs">
+        <i class="fa fa-bars openBtn" aria-hidden="true"></i>
+        <h2 id="hm-propensity" class="h2-1"> Propensity </h2>
+        <a href="#" class="link-s disabled"> Sign out </a>
+      <!-- end of header top -->
+      </section>
+      <!-- Primary panel -->
+      <section class="panel primary flex flex-panel">
+        <div class="panselect">
+          <p class="text-m"><strong> search </strong></p>
+          <input class="searchbar input" type="text" placeholder="&#xF002;"></input>
+        </div>
+        <div class="panselect">
+          <p class="text-m"><strong> sort </strong></p>
+          <select class="input">
+            <option value="name"> alphabetically </option>
+            <option value="name"> most recent </option>
+            <option value="name"> lifetime amount </option>
+            <option value="name"> recent amount </option>
+          </select>
+        </div>
+        <div class="panselect">
+          <p class="text-m"><strong> filter </strong></p>
+          <input id="r1" type="checkbox" value="rule 1">
+            <label for="r1"> rule 1 </label>
+          <input id="r2" type="checkbox" value="rule 2">
+            <label for="r2"> rule 2 </label>
+          <input id="r3" type="checkbox" value="rule 3">
+            <label for="r3"> rule 3 </label>
+        </div>
+      <!-- End of primary panel -->
+      </section>
+    <!-- end of header -->
+    </header>
+
+    <!-- Sidebar navigation -->
+    <nav class="sidenav">
+      <i class="fa fa-times closeBtn" aria-hidden="true"></i>
+      <a href="#" class="link-s disabled">
+        <i class="fa fa-sign-out" aria-hidden="true"></i>
+        Sign out
+      </a>
+      <a href="./index.html" class="link-s">
+        <i class="fa fa-th" aria-hidden="true"></i>
+        Dashboard
+      </a>
+      <a href="./users.html" class="link-s">
+        <i class="fa fa-users" aria-hidden="true"></i>
+        All users
+      </a>
+      <a href="#" class="link-s disabled">
+        <i class="fa fa-plus-square-o" aria-hidden="true"></i>
+        Add new donor
+      </a>
+      <a href="#" class="link-s disabled">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        Search donor
+      </a>
+    </nav>
+
+<!-- ============================================================================== -->
+    <!-- Main section does not have secondary panel -->
+    <main class="users_ flex flex-crc">
+      <!-- Card beginning -->
+
+      <div class="card flex flex-ccc">
+        <!-- Card top part -->
+        <div class="card-vistop grid grid-cardtop">
+          <!-- Left top  -->
+          <div class="">
+            <!-- Full name -->
+            <a class="linkUser" href="./user.html">
+            <div class="card-fullname">
+              <p class="title-l"> Jim </p>
+              <p class="title-l"> Jones </p>
+            </div>
+            </a>
+            <div class="card-avatar">
+              <i class="fa fa-male" aria-hidden="true"></i>
+            </div>
+          </div>
+          <!-- Right top -->
+          <div class="">
+            <p class="text-l"> Y </p>
+            <p class="subtitle-xxs upcase"> plans to gift </p>
+            <p class="text-l"> $500000 </p>
+            <p class="subtitle-xxs upcase"> lifetime giving amount </p>
+            <p class="text-l"> $25000 </p>
+            <p class="subtitle-xxs upcase"> last giving amount </p>
+            <p class="text-l"> 6 </p>
+            <p class="subtitle-xxs upcase"> events attended </p>
+          </div>
+        <!-- end of card top  -->
+        </div>
+
+        <button class="cardBtn" type="button">
+          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </button>
+
+        <!-- Card bottom part  -->
+        <div class="card-infobot flex flex-srs">
+          <!-- Left side of card bottom -->
+          <div class="">
+            <!-- Other specs -->
+            <p class="text-s">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              111-222-333
+            </p>
+            <p class="text-s">
+              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+              person@gmail.com
+            </p>
+            <br>
+
+            <p class="text-s"> 1221 S Creasy Ln, Lafayette, IN 47905 </p>
+            <p class="subtitle-xxs upcase"> Address </p>
+
+            <p class="text-s"> Industrial Engineer </p>
+            <p class="subtitle-xxs upcase"> Job Type </p>
+
+            <p class="text-s"> Purdue university </p>
+            <p class="subtitle-xxs upcase"> College </p>
+
+            <p class="text-s"> Industrial engineering </p>
+            <p class="subtitle-xxs upcase"> major </p>
+
+            <p class="text-s"> 555444 </p>
+            <p class="subtitle-xxs upcase"> ID </p>
+          </div>
+
+
+          <!-- Right side of the bottom -->
+          <div>
+          </div>
+
+        <!-- end of card bottom -->
+        </div>
+      <!-- end of card -->
+      </div>
+
+      <!-- Card beginning -->
+      <div class="card flex flex-ccc">
+        <!-- Card top part -->
+        <div class="card-vistop grid grid-cardtop">
+          <!-- Left top  -->
+          <div class="">
+            <!-- Full name -->
+            <a class="linkUser" href="./user.html">
+            <div class="card-fullname">
+              <p class="title-l"> Jim </p>
+              <p class="title-l"> Jones </p>
+            </div>
+            </a>
+            <div class="card-avatar">
+              <i class="fa fa-male" aria-hidden="true"></i>
+            </div>
+          </div>
+          <!-- Right top -->
+          <div class="">
+            <p class="text-l"> Y </p>
+            <p class="subtitle-xxs upcase"> plans to gift </p>
+            <p class="text-l"> $500000 </p>
+            <p class="subtitle-xxs upcase"> lifetime giving amount </p>
+            <p class="text-l"> $25000 </p>
+            <p class="subtitle-xxs upcase"> last giving amount </p>
+            <p class="text-l"> 6 </p>
+            <p class="subtitle-xxs upcase"> events attended </p>
+          </div>
+        <!-- end of card top  -->
+        </div>
+
+        <button class="cardBtn" type="button">
+          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </button>
+
+        <!-- Card bottom part  -->
+        <div class="card-infobot flex flex-srs">
+          <!-- Left side of card bottom -->
+          <div class="">
+            <!-- Other specs -->
+            <p class="text-s">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              111-222-333
+            </p>
+            <p class="text-s">
+              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+              person@gmail.com
+            </p>
+            <br>
+
+            <p class="text-s"> 1221 S Creasy Ln, Lafayette, IN 47905 </p>
+            <p class="subtitle-xxs upcase"> Address </p>
+
+            <p class="text-s"> Industrial Engineer </p>
+            <p class="subtitle-xxs upcase"> Job Type </p>
+
+            <p class="text-s"> Purdue university </p>
+            <p class="subtitle-xxs upcase"> College </p>
+
+            <p class="text-s"> Industrial engineering </p>
+            <p class="subtitle-xxs upcase"> major </p>
+
+            <p class="text-s"> 555444 </p>
+            <p class="subtitle-xxs upcase"> ID </p>
+          </div>
+
+
+          <!-- Right side of the bottom -->
+          <div>
+          </div>
+
+        <!-- end of card bottom -->
+        </div>
+      <!-- end of card -->
+      </div>
+
+
+      <!-- Card beginning -->
+      <div class="card flex flex-ccc">
+        <!-- Card top part -->
+        <div class="card-vistop grid grid-cardtop">
+          <!-- Left top  -->
+          <div class="">
+            <!-- Full name -->
+            <a class="linkUser" href="./user.html">
+            <div class="card-fullname">
+              <p class="title-l"> Stacey </p>
+              <p class="title-l"> Button </p>
+            </div>
+            </a>
+            <div class="card-avatar">
+              <i class="fa fa-female" aria-hidden="true"></i>
+            </div>
+          </div>
+          <!-- Right top -->
+          <div class="">
+            <p class="text-l"> Y </p>
+            <p class="subtitle-xxs upcase"> plans to gift </p>
+            <p class="text-l"> $500000 </p>
+            <p class="subtitle-xxs upcase"> lifetime giving amount </p>
+            <p class="text-l"> $25000 </p>
+            <p class="subtitle-xxs upcase"> last giving amount </p>
+            <p class="text-l"> 6 </p>
+            <p class="subtitle-xxs upcase"> events attended </p>
+          </div>
+        <!-- end of card top  -->
+        </div>
+
+        <button class="cardBtn" type="button">
+          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </button>
+
+        <!-- Card bottom part  -->
+        <div class="card-infobot flex flex-srs">
+          <!-- Left side of card bottom -->
+          <div class="">
+            <!-- Other specs -->
+            <p class="text-s">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              111-222-333
+            </p>
+            <p class="text-s">
+              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+              person@gmail.com
+            </p>
+            <br>
+
+            <p class="text-s"> 1221 S Creasy Ln, Lafayette, IN 47905 </p>
+            <p class="subtitle-xxs upcase"> Address </p>
+
+            <p class="text-s"> Industrial Engineer </p>
+            <p class="subtitle-xxs upcase"> Job Type </p>
+
+            <p class="text-s"> Purdue university </p>
+            <p class="subtitle-xxs upcase"> College </p>
+
+            <p class="text-s"> Industrial engineering </p>
+            <p class="subtitle-xxs upcase"> major </p>
+
+            <p class="text-s"> 555444 </p>
+            <p class="subtitle-xxs upcase"> ID </p>
+          </div>
+
+
+          <!-- Right side of the bottom -->
+          <div>
+          </div>
+
+        <!-- end of card bottom -->
+        </div>
+      <!-- end of card -->
+      </div>
+
+      <!-- Card beginning -->
+      <div class="card flex flex-ccc">
+        <!-- Card top part -->
+        <div class="card-vistop grid grid-cardtop">
+          <!-- Left top  -->
+          <div class="">
+            <!-- Full name -->
+            <a class="linkUser" href="./user.html">
+            <div class="card-fullname">
+              <p class="title-l"> Jim </p>
+              <p class="title-l"> Jones </p>
+            </div>
+            </a>
+            <div class="card-avatar">
+              <i class="fa fa-male" aria-hidden="true"></i>
+            </div>
+          </div>
+          <!-- Right top -->
+          <div class="">
+            <p class="text-l"> Y </p>
+            <p class="subtitle-xxs upcase"> plans to gift </p>
+            <p class="text-l"> $500000 </p>
+            <p class="subtitle-xxs upcase"> lifetime giving amount </p>
+            <p class="text-l"> $25000 </p>
+            <p class="subtitle-xxs upcase"> last giving amount </p>
+            <p class="text-l"> 6 </p>
+            <p class="subtitle-xxs upcase"> events attended </p>
+          </div>
+        <!-- end of card top  -->
+        </div>
+
+        <button class="cardBtn" type="button">
+          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </button>
+
+        <!-- Card bottom part  -->
+        <div class="card-infobot flex flex-srs">
+          <!-- Left side of card bottom -->
+          <div class="">
+            <!-- Other specs -->
+            <p class="text-s">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              111-222-333
+            </p>
+            <p class="text-s">
+              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+              person@gmail.com
+            </p>
+            <br>
+
+            <p class="text-s"> 1221 S Creasy Ln, Lafayette, IN 47905 </p>
+            <p class="subtitle-xxs upcase"> Address </p>
+
+            <p class="text-s"> Industrial Engineer </p>
+            <p class="subtitle-xxs upcase"> Job Type </p>
+
+            <p class="text-s"> Purdue university </p>
+            <p class="subtitle-xxs upcase"> College </p>
+
+            <p class="text-s"> Industrial engineering </p>
+            <p class="subtitle-xxs upcase"> major </p>
+
+            <p class="text-s"> 555444 </p>
+            <p class="subtitle-xxs upcase"> ID </p>
+          </div>
+
+
+          <!-- Right side of the bottom -->
+          <div>
+          </div>
+
+        <!-- end of card bottom -->
+        </div>
+      <!-- end of card -->
+      </div>
+
+
+    <!-- end of main -->
+    </main>
+
+<!-- ============================================================================= -->
+
+    <!-- Footer is permanent ? -->
+    <footer class="">
+      <section class="foot flex flex-srs">
+        <!-- Div 1 -->
+        <div>
+          <h4 class="h4-1"> About </h4>
+          <p>
+            Sushi is often confused with
+            sashimi, a related Japanese dish consisting of thinly sliced raw
+            fish or occasionally meat, and an optional serving of rice.
+          </p>
+          <a href="#" class="link-xxs disabled"> Read more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+        </div>
+        <!-- Div 2 -->
+        <div>
+          <h4 class="h4-1"> Contact </h4>
+          <p>
+            Sushi originates in a Southeast Asian dish, known today as narezushi
+            (馴れ寿司, 熟寿司 – "salted fish"), stored in fermented rice for
+            possibly months at a time.
+          </p>
+          <a href="#" class="link-xxs disabled"> Read more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+        </div>
+        <!-- Div 3 -->
+        <div>
+          <h4 class="h4-1"> Help </h4>
+          <p>
+            The lacto-fermentation of the rice prevented the fish from spoiling;
+            the rice would be discarded before consumption of the fish.
+            This early type of sushi became an important source of protein for
+            its Japanese consumers.
+          </p>
+          <a href="#" class="link-xxs disabled"> Read more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+        </div>
+        <!-- Div 4 -->
+        <div>
+          <h4 class="h4-1"> More </h4>
+          <p>
+            The term sushi comes from an antiquated grammatical form no longer
+            used in other contexts, and literally means "sour-tasting";
+            the overall dish has a sour and umami or savoury taste
+          </p>
+          <a href="#" class="link-xxs disabled"> Read more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </section>
+
+      <div class="policies_ container-xs flex flex-crs">
+        <a class="link-xxs disabled" href="#"> Trust and Safety </a>
+        <a class="link-xxs disabled" href="#"> Terms of Use </a>
+        <a class="link-xxs disabled" href="#"> Privacy Policy </a>
+        <a class="link-xxs disabled" href="#"> Cookie Policy </a>
+      </div>
+    <!-- end of footer -->
+    </footer>
+
+    <script src="./nav.js"></script>
+    <script src="./users.js"></script>
+
+  </body>
+</html>
