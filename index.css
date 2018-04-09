@@ -48,7 +48,7 @@ p{
 }
 
 
-/* NOTE: Id's */
+/* NOTE: Individual id's */
 #js-fa-up{
   /* This is kind of a button/icon */
   background: #dd614a;
@@ -233,7 +233,7 @@ span#ZH{
 /* LEFT About*/
 section.about .about-left{
   border-right: solid #e3e3e3 1px;
-  margin: 50px auto 100px;
+  margin: 4.209em auto 5.61em;
   flex: 1;
 }
 section.about .about-left > div{
@@ -248,7 +248,7 @@ section.about .about-left article > i{
 section.about .about-right{
   /*border-left: solid #e3e3e3 1px;*/
   height: 92vh;
-  margin: 50px auto 100px;
+  margin: 4.209em auto 5.61em;
   /*overflow: hidden;*/
   flex: 1;
 }
@@ -301,7 +301,7 @@ section.contact{
   padding-bottom: 50px;
 }
 section.contact > h4{
-  line-height: 2.6;
+  line-height: 3.6;
 }
 section.contact i{
   padding: 13px 16px;
