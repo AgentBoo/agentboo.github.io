@@ -166,7 +166,7 @@ section{
 
 .ribbon{
   background: #222;
-  padding: 2vh 1.6rem;
+  padding: 0 1.6rem;
 }
 
 .subcontent{
@@ -182,15 +182,15 @@ header nav{
   align-items: center;
   flex-flow: row wrap;
   justify-content: space-between;
+  height: 4.08rem;
 }
 
 span#ZH{
-  /* This is not an icon, but I want the properties of an icon */
-  background: #140e0e;
-  border-radius: 50%;
-  color: #a27368;
-  opacity: 0.9;
-  padding: 10px 13px;
+  color: #fdfdfd;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 300;
+  letter-spacing: -0.4px;
 }
 
 .css-menu{
@@ -199,7 +199,7 @@ span#ZH{
 
 .nav-links > a{
   margin: 0 2px;
-  padding: 0 8px 3.8vh;
+  padding: 0 0.26rem 1.33rem;
 }
 .nav-links > a:hover{
   border-bottom: solid #b7dee5;
@@ -402,6 +402,7 @@ footer.ribbon p{
   color: #f9f8f7;
   cursor: default;
   margin-right: 3vw;
+  padding: 0.78rem 0;
   text-transform: uppercase;
 }
 
