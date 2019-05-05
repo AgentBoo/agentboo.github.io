@@ -90,7 +90,6 @@ function SEO({ description, lang, meta, keywords, title }) {
 				integrity="sha384-EMmnH+Njn8umuoSMZ3Ae3bC9hDknHKOWL2e9WJD/cN6XLeAN7tr5ZQ0Hx5HDHtkS"
 				crossorigin="anonymous"
 			/>
-			{/*<script defer src={withPrefix('/particles/particles.js')}/>*/}
 		</Helmet>
 	)
 }
